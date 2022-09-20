@@ -6,9 +6,11 @@ description: Athena.webview.emit
 
 Emits an event directly to the client's WebView.
 
-{% hint style="danger" %}
+::: warning 
+
 WebView event must be unique. Meaning no other event names must match this specific event name.
-{% endhint %}
+
+:::
 
 ### Usage
 

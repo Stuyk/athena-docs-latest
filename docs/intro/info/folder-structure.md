@@ -61,7 +61,7 @@ Extensions can usually be modified with an `override` function to change the beh
 
 This is where all core game mode imports are done. These usually consist of many different imports with a load order to ensure the game mode runs correctly. You may append any additional core import files here. However, it is highly recommended to use the plugin structure instead for modifying / adding new features to the framework.
 
-[creating-plugins.md](../plugins/creating-plugins.md)
+[creating-plugins.md](../../plugins/creating-plugins.md)
 
 #### 📁 interface
 
