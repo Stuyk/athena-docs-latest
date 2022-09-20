@@ -27,6 +27,9 @@ export default {
                 text: 'Plugins', link: '/plugins/about-plugins',
             },
             {
+                text: 'Forum', link: 'https://forum.athenaframework.com/',
+            },
+            {
                 text: 'Links',
                 items: [
                     {
