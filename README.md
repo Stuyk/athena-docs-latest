@@ -1,5 +1,4 @@
-# alt:V JS Docs
+# alt:V Athena Documentation
 
-A proof of concept documentation built with vitepress.
+Official documentation repository that utilizes vitepress, and used as the home page for `https://athenaframework.com/`.
 
-https://stuyk.github.io/altv-js-docs
