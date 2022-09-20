@@ -1,6 +1,6 @@
 import { getSidebar } from './sidebar';
 
-const BASE_URL = '/athena-docs/'
+const BASE_URL = '/'
 
 export default {
     base: BASE_URL,
