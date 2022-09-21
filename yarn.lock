@@ -153,10 +153,10 @@
     "@docsearch/css" "3.2.1"
     "algoliasearch" "^4.0.0"
 
-"@stuyk/vitepress-sidebar-builder@^1.0.1":
-  "integrity" "sha512-UV7xz1zCvSjK5BL3dwwSOZOIsHuBKk70KNtGOxdQxPiShC06z45bnuvl2wBUgQtKL7EZhu1V2/dtky1sophHsQ=="
-  "resolved" "https://registry.npmjs.org/@stuyk/vitepress-sidebar-builder/-/vitepress-sidebar-builder-1.0.1.tgz"
-  "version" "1.0.1"
+"@stuyk/vitepress-sidebar-builder@^1.0.2":
+  "integrity" "sha512-9gQaeNPE9Qiz8ozZ9xp/DQIZOKnpxW3GSbg57BSVJBMFfP/5poc155TFckmmwwo3gjeb87fi+eG26SN72lQbxw=="
+  "resolved" "https://registry.npmjs.org/@stuyk/vitepress-sidebar-builder/-/vitepress-sidebar-builder-1.0.2.tgz"
+  "version" "1.0.2"
   dependencies:
     "glob" "^8.0.3"
     "gray-matter" "^4.0.3"
@@ -625,10 +625,10 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"vitepress-plugin-simple-search@^1.1.2":
-  "integrity" "sha512-793yxVHNgUoIDXdQOVwMQjug9YAvLACrtJ8oKjr2AfG4g9cGiTSPca4YE5m7anJO8FKfDADCSqdL71kERXQ1ig=="
-  "resolved" "https://registry.npmjs.org/vitepress-plugin-simple-search/-/vitepress-plugin-simple-search-1.1.2.tgz"
-  "version" "1.1.2"
+"vitepress-plugin-simple-search@^1.2.0":
+  "integrity" "sha512-vbntib/dp3cDMD1ZoZY+jDymGH5waxwWBi+MdGRSVejT5wA6e7fJyN5/EmxSE4Ornc/S0IdaQyqNmZBafWBaeg=="
+  "resolved" "https://registry.npmjs.org/vitepress-plugin-simple-search/-/vitepress-plugin-simple-search-1.2.0.tgz"
+  "version" "1.2.0"
   dependencies:
     "fs-extra" "^10.1.0"
     "glob" "^8.0.3"
