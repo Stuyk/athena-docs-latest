@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "@stuyk/vitepress-sidebar-builder": "^1.0.1",
-    "vitepress-plugin-search": "^1.0.4-alpha.6"
+    "vitepress-plugin-simple-search": "^1.0.0"
   }
 }

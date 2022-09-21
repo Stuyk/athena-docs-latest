@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
-import { SearchPlugin } from 'vitepress-plugin-search';
+import { SimpleSearch } from 'vitepress-plugin-simple-search';
 
 export default defineConfig({
-	plugins: [SearchPlugin()],
+	plugins: [SimpleSearch('/')],
 	server: {
 		fs: {
 			allow: ["D:/projects/vitepress-plugin-search"]

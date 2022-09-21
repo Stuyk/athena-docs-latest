@@ -1,5 +1,6 @@
 ---
-description: Athena.webview.emit
+title: '.emit'
+order: 0
 ---
 
 # emit
