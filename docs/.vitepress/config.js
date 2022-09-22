@@ -15,19 +15,21 @@ export default {
         // Navigation - Top of the Documentation Page Links
         nav: [
             {
-                text: 'Docs', link: '/intro/intro/index',
+                text: 'Intro', link: '/intro/intro/index',
             },
             {
-                text: 'API Server', link: '/api-server/intro',
-            },
-            {
-                text: 'API Client', link: '/api-client/intro',
-            },
-            {
-                text: 'Plugins', link: '/plugins/about-plugins',
-            },
-            {
-                text: 'Forum', link: 'https://forum.athenaframework.com/',
+                text: 'API',
+                items: [
+                    {
+                        text: 'API Server', link: '/api-server/intro',
+                    },
+                    {
+                        text: 'API Client', link: '/api-client/intro',
+                    },
+                    {
+                        text: 'Plugins', link: '/plugins/about-plugins',
+                    },
+                ]
             },
             {
                 text: 'Links',
@@ -40,6 +42,9 @@ export default {
                     },
                     {
                         text: 'GTA:V Data Browser', link: 'https://forge.plebmasters.de/'
+                    },
+                    {
+                        text: 'Forum', link: 'https://forum.athenaframework.com/',
                     },
                 ]
             },

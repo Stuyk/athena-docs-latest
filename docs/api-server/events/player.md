@@ -22,15 +22,18 @@ export enum ATHENA_EVENTS_VEHICLE {
 
 ```
 
-**Usage:** `ATHENA_EVENTS_VEHICLE.DESPAWNED`
+**Usage:** `ATHENA_EVENTS_PLAYER.DIED`
 
-* DESPAWNED -> When a vehicle is despawned.
-* ENGINE_STATE_CHANGE -> When a vehicle is turned on or off.
-* LOCK_STATE_CHANGE -> When a vehicle's lock state has changed.
-* REPAIRED -> When a vehicle is repaired.
-* SPAWNED -> When a vehicle is spawned from a garage, or anywhere else.
-* DISTANCE_TRAVELED -> When a vehicle has moved some distance. Third argument is distance count.
-* DESTROYED -> When a vehicle is blown up, destroyed, etc.
+* DIED -> When a player has died.
+* DROPPED_ITEM -> When a player drops an item.
+* ENTERED_INTERIOR -> When a player enters an interior through the Interior plugin.
+* LEFT_INTERIOR -> When a player leaves an interior through the Interior plugin.
+* PURCHASED_VEHICLE -> When a player has purchased a vehicle through the Dealership plugin.
+* SELECTED_CHARACTER -> When a player has selected a character.
+* SPAWNED -> When a player has respawned.
+* TOGGLED_INTERIOR_LOCK -> When a player triggers an interior lock through the Interior plugin.
+* EQUIPPED_WEAPON -> When a player has equipped a weapon.
+* UNEQUIPPED_WEAPON -> When a player removes a weapon equip.
 
 ## trigger
 
@@ -45,7 +48,7 @@ Athena.events.player.trigger(ATHENA_EVENTS_PLAYER.DIED, somePlayer);
 Used to listen for a player specific event to occur.
 
 ```ts
-Athena.events.player.trigger(ATHENA_EVENTS_PLAYER.DIED, (player: alt.Player) => {
+Athena.events.player.on(ATHENA_EVENTS_PLAYER.DIED, (player: alt.Player) => {
     console.log(`${player.data.name} has died! :(`);
 });
 ```

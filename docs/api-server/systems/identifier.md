@@ -50,7 +50,7 @@ Returns a numerical identifier associated with the current strategy.
 
 ```ts
 const someID = Athena.systems.identifier.getIdByStrategy(somePlayer);
-console.log(`Idnetifier is: ${someID}`);
+console.log(`Identifier is: ${someID}`);
 ```
 
 ## override
