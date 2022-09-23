@@ -31,74 +31,79 @@ export function getSidebar() {
         ],
         '/api-server/': [
             {
-                text: 'Athena.controllers->',
+                text: 'Athena.controllers',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-server/controllers')
             },
             {
-                text: 'Athena.database->',
+                text: 'Athena.database',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-server/database')
             },
             {
-                text: 'Athena.events->',
+                text: 'Athena.events',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-server/events')
             },
             {
-                text: 'Athena.get->',
+                text: 'Athena.get',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-server/get')
             },
             {
-                text: 'Athena.systems->',
+                text: 'Athena.systems',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-server/systems')
             },
             {
-                text: 'Athena.utility->',
+                text: 'Athena.utility',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-server/utility')
             },
         ],
         '/api-client/': [
             {
-                text: 'AthenaClient.camera->',
+                text: 'AthenaClient.camera',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/camera')
             },
             {
-                text: 'AthenaClient.data->',
+                text: 'AthenaClient.data',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/data')
             },
             {
-                text: 'AthenaClient.menus->',
+                text: 'AthenaClient.events',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/events')
+            },
+            {
+                text: 'AthenaClient.menus',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/menus')
             },
             {
-                text: 'AthenaClient.notification->',
+                text: 'AthenaClient.notification',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/notification')
             },
             {
-                text: 'AthenaClient.screen->',
+                text: 'AthenaClient.screen',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/screen')
             },
             {
-                text: 'AthenaClient.sound->',
+                text: 'AthenaClient.sound',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/sound')
             },
             {
-                text: 'AthenaClient.utility->',
+                text: 'AthenaClient.utility',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/utility')
             },
             {
-                text: 'AthenaClient.webview->',
+                text: 'AthenaClient.webview',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/webview')
             },

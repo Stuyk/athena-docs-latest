@@ -1,5 +1,5 @@
 ---
-title: 'home'
+title: 'Landing'
 layout: 'home'
 hero:
   name: 'Athena Framework'
