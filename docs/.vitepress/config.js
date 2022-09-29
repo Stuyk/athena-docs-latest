@@ -32,6 +32,14 @@ export default {
                 ]
             },
             {
+                text: 'Tools',
+                items: [
+                    {
+                        text: 'Athena Toolkit', link: '/tools/toolkit',
+                    },
+                ]
+            },
+            {
                 text: 'Links',
                 items: [
                     {
