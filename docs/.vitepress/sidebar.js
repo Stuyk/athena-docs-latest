@@ -98,6 +98,11 @@ export function getSidebar() {
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/sound')
             },
             {
+                text: 'AthenaClient.sprite',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/sprite')
+            },
+            {
                 text: 'AthenaClient.utility',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/utility')
