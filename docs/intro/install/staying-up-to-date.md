@@ -26,6 +26,13 @@ git remote add upstream https://github.com/Stuyk/altv-athena
 git remote set-url --push upstream DISABLE
 ```
 
+Instead of disabling the push upstream, you can also set this to your origin repository.
+
+An example of how to change the remote push URL is here:
+```ts
+git remote set-url --push origin your_repository_url
+```
+
 After running this in a terminal you are now hooked up to the main repository to pull updates from.
 
 You will first need to commit any changes that you have made on your private fork.

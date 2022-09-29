@@ -265,6 +265,13 @@ git remote add upstream https://github.com/Stuyk/altv-athena
 git remote set-url --push upstream DISABLE
 ```
 
+Instead of disabling the push upstream, you can also set this to your origin repository.
+
+An example of how to change the remote push URL is here:
+```ts
+git remote set-url --push origin your_repository_url
+```
+
 If you refresh the GitHub page you should see a clone of Athena inside of your private repository if you were successful.
 
 ### Pushing updates
