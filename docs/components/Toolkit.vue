@@ -107,6 +107,11 @@ onMounted(() => {
                 <code>debug</code> is turned on, on the server.
             </p>
             <br />
+            <p>
+                If you are using any adblocks, or the brave browser. Turn off your shields. That may prevent this tool
+                from working correctly.
+            </p>
+            <br />
             <div v-if="!isConnected">
                 <div class="split">
                     <div class="lds-ring">
