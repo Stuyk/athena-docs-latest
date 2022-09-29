@@ -8,10 +8,10 @@ const isConnected = ref(false);
 const players = ref([]);
 const vehicles = ref([]);
 const memory = ref(0);
-const cpu = ref(0);
 const list = ref([]);
 const tabs = ref([{ name: 'List' }, { name: 'Players' }, { name: 'Vehicles' }]);
 const tabIndex = ref(0);
+let host = 'localhost';
 
 const removeFromList = (index) => {
     list.value.splice(index, 1);
@@ -22,7 +22,13 @@ const setTab = (index) => {
 };
 
 const handleConnection = async () => {
-    const resp = await fetch(`http://localhost:${PORT}`).catch((err) => {
+    const resp = await fetch(`http://${host}:${PORT}`).catch((err) => {
+        if (host === 'localhost') {
+            host = '127.0.0.1';
+        } else {
+            host = 'localhost';
+        }
+
         return { resp: { ok: false } };
     });
 
@@ -31,7 +37,7 @@ const handleConnection = async () => {
         return;
     }
 
-    fetch(`http://localhost:${PORT}/players`).then(async (resp) => {
+    fetch(`http://${host}:${PORT}/players`).then(async (resp) => {
         if (!resp.ok) {
             players.value = [];
             return;
@@ -40,7 +46,7 @@ const handleConnection = async () => {
         players.value = await resp.json();
     });
 
-    fetch(`http://localhost:${PORT}/vehicles`).then(async (resp) => {
+    fetch(`http://${host}:${PORT}/vehicles`).then(async (resp) => {
         if (!resp.ok) {
             vehicles.value = [];
             return;
@@ -49,7 +55,7 @@ const handleConnection = async () => {
         vehicles.value = await resp.json();
     });
 
-    fetch(`http://localhost:${PORT}/update`).then(async (resp) => {
+    fetch(`http://${host}:${PORT}/update`).then(async (resp) => {
         const data = await resp.json().catch((err) => {
             return undefined;
         });
@@ -69,7 +75,7 @@ const handleUsageStats = () => {
         return;
     }
 
-    fetch(`http://localhost:${PORT}/memory`).then(async (resp) => {
+    fetch(`http://${host}:${PORT}/memory`).then(async (resp) => {
         const data = await resp.json().catch((err) => {
             return undefined;
         });
