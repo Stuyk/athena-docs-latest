@@ -625,10 +625,10 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"vitepress-plugin-simple-search@^1.2.0":
-  "integrity" "sha512-vbntib/dp3cDMD1ZoZY+jDymGH5waxwWBi+MdGRSVejT5wA6e7fJyN5/EmxSE4Ornc/S0IdaQyqNmZBafWBaeg=="
-  "resolved" "https://registry.npmjs.org/vitepress-plugin-simple-search/-/vitepress-plugin-simple-search-1.2.0.tgz"
-  "version" "1.2.0"
+"vitepress-plugin-simple-search@^1.2.1":
+  "integrity" "sha512-sPbgsIuAwhja22Q78srGiib8nmAI4A2jsC6jL5xF1Vcw8qCn/Tv8eI5Ww0AWisC7aFICJYECn8obJOqvR+dBYA=="
+  "resolved" "https://registry.npmjs.org/vitepress-plugin-simple-search/-/vitepress-plugin-simple-search-1.2.1.tgz"
+  "version" "1.2.1"
   dependencies:
     "fs-extra" "^10.1.0"
     "glob" "^8.0.3"
