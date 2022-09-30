@@ -121,6 +121,14 @@ export function getSidebar() {
             },
             ...SidebarBuilder.get.foldersAndOrder('./docs/plugins')
         ],
+        '/user-plugins': [
+            {
+                text: 'Info',
+                collapsible: false,
+                items: SidebarBuilder.get.filesAndOrder('./docs/user-plugins')
+            },
+            ...SidebarBuilder.get.foldersAndOrder('./docs/user-plugins/readmes')
+        ]
     };
 }
 
