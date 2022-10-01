@@ -54,6 +54,12 @@ This is usually done through the usage of Git.
 
 You will find examples in here of how its done through the Terminal in Visual Studio Code, PowerShell or GitBash.
 
+## Fork a repository
+To fork a repository, you'll need to go to the URL of the repository you want to fork. Afterwards you can press the fork button in the upper right.
+
+Here's an example of how it will look like:
+![image](https://i.imgur.com/azuyoKD.png)
+
 ## Switch Branches
 Since athena is always based on the latest dev-branch, you should have an idea of how to switch branches.
 
