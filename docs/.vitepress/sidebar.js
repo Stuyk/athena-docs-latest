@@ -98,6 +98,11 @@ export function getSidebar() {
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/sound')
             },
             {
+                text: 'AthenaClient.sprite',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/sprite')
+            },
+            {
                 text: 'AthenaClient.utility',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/utility')
@@ -116,6 +121,14 @@ export function getSidebar() {
             },
             ...SidebarBuilder.get.foldersAndOrder('./docs/plugins')
         ],
+        '/user-plugins': [
+            {
+                text: 'Info',
+                collapsible: false,
+                items: SidebarBuilder.get.filesAndOrder('./docs/user-plugins')
+            },
+            ...SidebarBuilder.get.foldersAndOrder('./docs/user-plugins/readmes')
+        ]
     };
 }
 
