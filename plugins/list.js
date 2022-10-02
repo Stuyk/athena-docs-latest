@@ -8,7 +8,8 @@ const PLUGINS = [
     { author: 'hypedmedia', title: 'Farming System', repo: 'plugin-farmingsystem', branch: 'main' },
     { author: 'Booster1212', title: 'Attachment Editor', repo: 'plugin-attachmenteditor', branch: 'main' },
     { author: 'McWulf1991', title: 'Even More Jobs', repo: 'even-more-Jobs', branch: 'main' },
-    { author: 'McWulf1991', title: 'Tuning Shop', repo: 'plugin-core-tuningshop', branch: 'main' }
+    { author: 'McWulf1991', title: 'Tuning Shop', repo: 'plugin-core-tuningshop', branch: 'main' },
+    { author: 'jonasesser', title: 'Portal', repo: 'gp-portal', branch: 'main' }
 ]
 
 module.exports = {
