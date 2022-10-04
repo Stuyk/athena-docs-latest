@@ -13,7 +13,8 @@ const PLUGINS = [
     { author: 'jonasesser', title: 'Flatbed', repo: 'gp-flatbed', branch: 'main' },
     { author: 'jonasesser', title: 'Interior', repo: 'gp-interiors', branch: 'main' },
     { author: 'jonasesser', title: 'Phone Demo', repo: 'gp-voice-demophone', branch: 'main' },
-    { author: 'ItsSpencer', title: 'Doorlocker', repo: 'athena-plugin-doorlocker', branch: 'main' }
+    { author: 'ItsSpencer', title: 'Doorlocker', repo: 'athena-plugin-doorlocker', branch: 'main' },
+    { author: 'ItsSpencer', title: 'Tackling', repo: 'athena-plugin-tackling', branch: 'main' }
 ]
 
 module.exports = {
