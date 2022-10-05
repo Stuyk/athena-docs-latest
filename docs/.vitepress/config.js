@@ -61,13 +61,10 @@ export default (async () => {
                             text: 'alt:V Client', link: 'https://altv.mp',
                         },
                         {
-                            text: 'Game Natives', link: 'https://natives.altv.mp',
+                            text: 'alt:V Native Database', link: 'https://natives.altv.mp',
                         },
                         {
                             text: 'GTA:V Data Browser', link: 'https://forge.plebmasters.de/'
-                        },
-                        {
-                            text: 'Forum', link: 'https://forum.athenaframework.com/',
                         },
                     ]
                 },
