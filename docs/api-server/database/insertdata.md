@@ -34,7 +34,7 @@ interface PhoneInfo {
 }
 
 async function insertSomething() {
-    const newPhoneInfo = await Athena.database.funcs.insertData<PhoneInfo>({ owner: '631779d7119e86368a313e1b', cell: 5551111222 }, true);
+    const newPhoneInfo = await Athena.database.funcs.insertData<PhoneInfo>({ owner: '631779d7119e86368a313e1b', cell: 5551111222 }, 'PhoneInfoCollection', true);
     console.log(newPhoneInfo);
 }
 ```
