@@ -21,18 +21,24 @@ If you have an existing fork, you need to catch up with the main repository, or 
 
 ### Modify the Plugin List
 
-After forking the repository, modify your version of the forked repository and edit the file under:
+After forking the repository, modify your version of the forked repository and add a new folder under `docs/plugins`.
 
-```
-docs/plugins/list.js
-```
+This folder should be the name of your `GitHub` public profile.
 
-Append information pertaining to your plugin's repository in the JavaScript array.
+Make sure to create an `index.js` file under the new folder as well.
 
-Example:
+ie. `plugins/stuyk/index.js`
+
+Modify your new file, and follow the format below:
 
 ```js
-{ author: 'Stuyk', title: 'Template Plugin', repo: 'altv-athena-plugin-template', branch: 'main' }
+module.exports = [
+    { 
+        title: 'Template Plugin', 
+        repo: 'altv-athena-plugin-template', 
+        branch: 'main' 
+    }
+]
 ```
 
 ### Create a Pull Request

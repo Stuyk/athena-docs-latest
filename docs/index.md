@@ -3,8 +3,7 @@ title: 'Landing'
 layout: 'home'
 hero:
   name: 'Athena Framework'
-  text: 'Roleplay Script'
-  tagline: 'Built on alt:V for GTA:V'
+  tagline: 'A Roleplay Script built on alt:V for GTA:V'
   image:
     src: '/logo.png'
     alt: 'alt:V'

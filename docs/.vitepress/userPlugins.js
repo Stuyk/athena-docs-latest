@@ -1,4 +1,4 @@
-import { PLUGINS } from '../../plugins/list.js';
+import { getPlugins } from '../../plugins/plugins';
 import path from 'path'
 import fs from 'fs';
 
@@ -10,27 +10,37 @@ export async function updateUserPlugins() {
         fs.mkdirSync(USER_PLUGIN_PATH);
     }
 
-    for (let plugin of PLUGINS) {
-        if (!plugin.title || !plugin.repo || !plugin.author || !plugin.branch) {
-            console.log(`Ignored: ${JSON.stringify(plugin)}`);
-            continue;
+    const PLUGINS = await getPlugins();
+    const authors = Object.keys(PLUGINS);
+    for (let author of authors) {
+        const plugins = PLUGINS[author];
+
+        for (let plugin of plugins) {
+            if (!plugin.title || !plugin.repo || !plugin.branch) {
+                console.log(`Ignored: ${JSON.stringify(plugin)}`);
+                continue;
+            }
+
+            let title = "---\n" +
+                `title: '${plugin.title}'\n` +
+                "order: 0\n" +
+                "---\n" +
+                "\n";
+
+            if (plugin.price && plugin.url) {
+                title += `<UserPlugin title="${plugin.title}" author="${author}" repo="${plugin.repo}" branch="${plugin.branch}" price="${plugin.price}" url="${plugin.url}"  />`
+            } else {
+                title += `<UserPlugin title="${plugin.title}" author="${author}" repo="${plugin.repo}" branch="${plugin.branch}" />`
+            }
+
+            const authorPath = path.join(USER_PLUGIN_PATH, author.toLowerCase());
+            const finalPath = path.join(authorPath, `${plugin.repo.toLowerCase()}.md`);
+
+            if (!fs.existsSync(authorPath)) {
+                fs.mkdirSync(authorPath, { recursive: true });
+            }
+
+            fs.writeFileSync(finalPath, title);
         }
-
-        const title = "---\n" +
-            `title: '${plugin.title}'\n` +
-            "order: 0\n" +
-            "---\n" +
-            "\n" +
-            `<UserPlugin author="${plugin.author}" repo="${plugin.repo}" branch="${plugin.branch}" />`
-
-
-        const authorPath = path.join(USER_PLUGIN_PATH, plugin.author.toLowerCase());
-        const finalPath = path.join(authorPath, `${plugin.repo.toLowerCase()}.md`);
-
-        if (!fs.existsSync(authorPath)) {
-            fs.mkdirSync(authorPath, { recursive: true });
-        }
-
-        fs.writeFileSync(finalPath, title);
     }
 }

@@ -5,9 +5,13 @@ import MD from 'markdown-it';
 const md = new MD();
 
 const content = ref(md.render('Loading...'));
+const isLoading = ref(true);
 const url = ref(undefined);
 
 const props = defineProps({
+    title: {
+        type: String,
+    },
     author: {
         type: String,
     },
@@ -17,37 +21,17 @@ const props = defineProps({
     branch: {
         type: String,
     },
+    price: {
+        type: String,
+    },
+    url: {
+        type: String,
+    },
 });
 
-async function textToByteArray(text) {
-    const blob = new Blob([text], { type: 'text/plain' });
-    const reader = new FileReader();
-
-    return new Promise((resolve) => {
-        reader.onload = (event) => {
-            return resolve(new Uint8Array(event.target.result));
-        };
-
-        reader.readAsArrayBuffer(blob);
-    });
-}
-
-async function byteArrayToText(bytes, encoding) {
-    const blob = new Blob([bytes], { type: 'application/octet-stream' });
-    const reader = new FileReader();
-
-    return new Promise((resolve) => {
-        reader.onload = (event) => {
-            return resolve(event.target.result);
-        };
-
-        if (encoding) {
-            reader.readAsText(blob, encoding);
-        } else {
-            reader.readAsText(blob);
-        }
-    });
-}
+const getUrl = () => {
+    return `https://github.com/${props.author}/${props.repo}`;
+};
 
 onMounted(async () => {
     let res = await fetch(
@@ -74,6 +58,7 @@ onMounted(async () => {
                 '* Ensure the repository is currently valid.\n' +
                 `* [Repo Link](https://github.com/${props.author}/${props.repo}/)`
         );
+        isLoading.value = false;
         return;
     }
 
@@ -92,38 +77,92 @@ onMounted(async () => {
         content.value = md.render(
             '# Failed to Fetch Data\n' + '* README IS NOT IN UTF-8 FORMAT. FIX YOUR README FILE.\n'
         );
+        isLoading.value = false;
         return;
     }
 
     content.value = md.render(rawData);
+    isLoading.value = false;
 });
 </script>
 
 <template>
-    <div class="data">
-        <div class="content-data">
-            <div v-html="content"></div>
+    <div class="vp-wrapper" v-if="!isLoading">
+        <div class="vp-doc">
+            <div v-html="content" />
         </div>
-        <div class="content-footer" v-if="url">
-            <a class="download-btn" :href="url" target="_blank">GitHub (Download)</a>
+        <div class="content-bottom">
+            <div class="content-info">
+                <sup class="author">Created By:</sup>
+                <sup style="margin-left: 12px">{{ props.author }}</sup>
+            </div>
+            <div class="content-info" v-if="!props.url || !props.price">
+                <sup>git clone {{ getUrl() }}</sup>
+            </div>
+            <div class="content-info" v-if="!props.url || !props.price">
+                <a :href="getUrl()" target="_blank">View on GitHub</a>
+            </div>
+            <div class="content-info" v-if="props.url && props.price">
+                <a :href="props.url" target="_blank">Purchase -> ${{ props.price }}</a>
+            </div>
         </div>
+    </div>
+    <div class="loading" v-else>
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <span class="loading-text">Loading Plugin Content...</span>
     </div>
 </template>
 
 <style>
+.loading {
+    display: flex;
+    align-items: center;
+}
+
+.loading-text {
+    padding-left: 24px;
+}
+
+.content-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-info {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    overflow-wrap: break-word;
+}
+
 .data {
     display: flex;
     flex-direction: column;
-    padding-top: 48px;
-    z-index: 99 !important;
+}
+
+.vp-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .content-footer {
-    padding-top: 24px;
+    padding-top: 0px;
 }
 
 .content-data {
-    margin-bottom: 24px;
+    display: flex !important;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .content-data img {
@@ -138,5 +177,46 @@ onMounted(async () => {
     border-radius: 6px;
     min-width: 120px !important;
     max-width: 120px;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 </style>
