@@ -5,8 +5,16 @@ order: -99
 
 # {{ $frontmatter.title }}
 
-Start by typing `AthenaClient` and import the first option.
+Importing the AthenaClient API on client-side is simple.
 
-If you add `.` after `AthenaClient` you will be prompted with other pathways to follow.
+```ts
+import { AthenaClient } from '@AthenaClient/api/athena';
+```
 
-That's all.
+Alternatively if you are on an older version:
+
+```ts
+import { AthenaClient } from '../../client/api/athena';
+```
+
+The `../` is based on how far away the file is from your main files. Adjust accordingly.

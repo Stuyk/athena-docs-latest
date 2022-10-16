@@ -31,6 +31,11 @@ export function getSidebar() {
         ],
         '/api-server/': [
             {
+                text: 'Imports',
+                collapsible: true,
+                items: [{ text: '@AthenaServer', title: 'API Server', link: '/api-server/intro.md', order: -99 }]
+            },
+            {
                 text: 'Athena.controllers',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-server/controllers')
@@ -62,6 +67,11 @@ export function getSidebar() {
             },
         ],
         '/api-client/': [
+            {
+                text: 'Imports',
+                collapsible: true,
+                items: [{ text: '@AthenaClient', title: 'API Client', link: '/api-client/intro.md', order: -99 }]
+            },
             {
                 text: 'AthenaClient.camera',
                 collapsible: true,

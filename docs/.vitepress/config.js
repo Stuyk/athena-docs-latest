@@ -10,6 +10,13 @@ export default (async () => {
         base: BASE_URL,
         title: 'Athena Framework',
         description: 'Roleplay Script for GTA:V',
+        lastUpdated: true,
+        cleanUrls: 'without-subfolders',
+        markdown: {
+            headers: {
+                level: [0, 0]
+            }
+        },
         themeConfig: {
             logo: '/logo.png',
             socialLinks: [
