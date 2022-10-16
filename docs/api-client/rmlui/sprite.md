@@ -13,6 +13,8 @@ Sprites are useful because you can directly add a `.png` image instead of adding
 
 Sprites offer an alternative to texture work.
 
+![](https://i.imgur.com/hKpE2u4.png)
+
 ## Image Pathing
 
 Sprites offer an alternative way to load your image from your plugin. You can specify that your image is located in your plugin by using `@plugins/your-plugin-name/client/your-image.png`

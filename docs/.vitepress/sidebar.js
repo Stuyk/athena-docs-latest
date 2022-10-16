@@ -78,29 +78,14 @@ export function getSidebar() {
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/events')
             },
             {
-                text: 'AthenaClient.menus',
+                text: 'AthenaClient.rmlui',
                 collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/menus')
-            },
-            {
-                text: 'AthenaClient.notification',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/notification')
-            },
-            {
-                text: 'AthenaClient.screen',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/screen')
+                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/rmlui')
             },
             {
                 text: 'AthenaClient.sound',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/sound')
-            },
-            {
-                text: 'AthenaClient.sprite',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/sprite')
             },
             {
                 text: 'AthenaClient.utility',
@@ -111,6 +96,11 @@ export function getSidebar() {
                 text: 'AthenaClient.webview',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/api-client/webview')
+            },
+            {
+                text: 'AthenaClient.wheelMenus',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/api-client/wheelMenus')
             },
         ],
         '/plugins/': [

@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import QuestionComponent from '/components/Question.vue';
 import ToolkitComponent from '/components/Toolkit.vue';
 import UserPluginComponent from '/components/UserPlugin.vue';
+import './athena.css'
 
 export default {
     ...DefaultTheme,
