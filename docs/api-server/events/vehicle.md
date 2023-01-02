@@ -10,18 +10,16 @@ These are Athena specific events for vehicles.
 ## Event Names
 
 ```ts
-export enum ATHENA_EVENTS_PLAYER {
-    DIED = 'athena:PlayerDied',
-    DROPPED_ITEM = 'athena:PlayerDroppedItem',
-    ENTERED_INTERIOR = 'athena:EnteredInterior',
-    LEFT_INTERIOR = 'athena:LeftInterior',
-    PURCHASED_VEHICLE = 'athena:PurchasedVehicle',
-    SELECTED_CHARACTER = 'athena:SelectedCharacter',
-    SPAWNED = 'athena:PlayerSpawned',
-    TOGGLED_INTERIOR_LOCK = 'athena:ToggleLock',
-    EQUIPPED_WEAPON = 'athena:equipped:weapon',
-    UNEQUIPPED_WEAPON = 'athena:unequipped:weapon',
+export enum ATHENA_EVENTS_VEHICLE {
+    DESPAWNED = 'athena:VehicleDespawned',
+    ENGINE_STATE_CHANGE = 'athena:VehicleEngineState',
+    LOCK_STATE_CHANGE = 'athena:VehicleLockState',
+    REPAIRED = 'athena:VehicleRepaired',
+    SPAWNED = 'athena:VehicleSpawned',
+    DISTANCE_TRAVELED = 'athena:DistanceTraveled',
+    DESTROYED = 'athena:VehicleDestroyed',
 }
+
 ```
 
 **Usage:** `ATHENA_EVENTS_VEHICLE.DESPAWNED`
