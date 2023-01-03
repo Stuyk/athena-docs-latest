@@ -19,4 +19,9 @@ module.exports = [
         repo: 'gp-voice-demophone',
         branch: 'main'
     },
+    {
+        title: 'Shop',
+        repo: 'gp-shop',
+        branch: 'main'
+    },
 ]
