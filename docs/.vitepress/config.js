@@ -62,6 +62,17 @@ export default (async () => {
                     ]
                 },
                 {
+                    text: 'Version',
+                    items: [
+                        {
+                            text: 'latest', link: 'https://athenaframework.com',
+                        },
+                        {
+                            text: 'v4', link: 'https://stuyk.github.io/athena-docs-v4/',
+                        },
+                    ]
+                },
+                {
                     text: 'Links',
                     items: [
                         {
