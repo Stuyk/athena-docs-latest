@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const debug = true;
+const debug = false;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
 const isAuthenticated = ref(false);
 
