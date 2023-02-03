@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const debug = false;
+const debug = true;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
 const isAuthenticated = ref(false);
 
@@ -24,7 +24,12 @@ onMounted(async () => {
     const searchParams = new URLSearchParams(window.location.search);
     const uid = searchParams.get('uid');
 
+    const urlModification = new URL(window.location.href);
+    urlModification.search = '';
+    const cleanURL = urlModification.toString();
+
     if (typeof uid === 'undefined' || !uid) {
+        window.history.replaceState({ additionalInformation: 'Replaced URL' }, 'Authorization Complete', cleanURL);
         return;
     }
 
@@ -37,17 +42,20 @@ onMounted(async () => {
     if (!res || !res.ok || res.status !== 200) {
         console.log(`Failed to fetch.`);
         isAuthenticated.value = false;
+        window.history.replaceState({ additionalInformation: 'Replaced URL' }, 'Authorization Complete', cleanURL);
         return;
     }
 
     const result = await res.json();
     if (result.code === 401) {
         isAuthenticated.value = false;
+        window.history.replaceState({ additionalInformation: 'Replaced URL' }, 'Authorization Complete', cleanURL);
         return;
     }
 
     window.localStorage.setItem('auth', result.message);
     isAuthenticated.value = true;
+    window.history.replaceState({ additionalInformation: 'Replaced URL' }, 'Authorization Complete', cleanURL);
 });
 </script>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toolkit'
+title: 'Discord Auth'
 order: -99
 ---
 
