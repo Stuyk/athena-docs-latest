@@ -131,7 +131,7 @@ export function getSidebar() {
         ],
         '/subscriber/tutorials': [
             {
-                text: 'Info',
+                text: 'Tutorials',
                 collapsible: false,
                 items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials')
             },

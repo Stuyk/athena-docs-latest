@@ -1,10 +1,10 @@
 ---
-title: 'Premium Content'
+title: 'Introduction'
 order: 0
 ---
 
 # {{ $frontmatter.title }}
 
-You are accessing documentation that is not public facing!
+These tutorials are not public facing. If you wish to access them you can subscribe with a membership on the official [Athena Framework Discord Server](https://ares.stuyk.com/v1/get/discord).
 
-Thanks for subscribing to the Athena Framework. Below you will find exclusive documentation and code written by Stuyk to better help you understand the complexities of the framework but also how to engineer complex solutions that are otherwise difficult to understand.
+You can see the various tutorials in the sidebar.
