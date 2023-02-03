@@ -1,6 +1,6 @@
 ---
 title: 'Test Page'
-order: 0
+order: 99999
 ---
 
 <ExclusivePage path="files/test.md" />
