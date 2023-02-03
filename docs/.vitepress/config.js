@@ -40,6 +40,9 @@ export default (async () => {
                         {
                             text: 'Plugins', link: '/plugins/about-plugins',
                         },
+                        {
+                            text: 'Tutorials', link: '/subscriber/tutorials/index',
+                        },
                     ]
                 },
                 {

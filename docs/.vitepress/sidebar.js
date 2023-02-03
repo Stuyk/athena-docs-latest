@@ -128,6 +128,13 @@ export function getSidebar() {
                 items: SidebarBuilder.get.filesAndOrder('./docs/user-plugins')
             },
             ...SidebarBuilder.get.foldersAndOrder('./docs/user-plugins/readmes')
+        ],
+        '/subscriber/tutorials': [
+            {
+                text: 'Info',
+                collapsible: false,
+                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials')
+            },
         ]
     };
 }
