@@ -8,7 +8,7 @@ const content = ref(undefined);
 const isLoading = ref(true);
 const isAuthenticated = ref(false);
 
-const debug = true;
+const debug = false;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
 
 const props = defineProps({
