@@ -12,6 +12,7 @@ const loadingMessage = ref('Loading');
 const debug = false;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
 const hideLink = ref(false);
+const highlighter = ref(undefined);
 
 const props = defineProps({
     path: {
@@ -28,6 +29,14 @@ onMounted(async () => {
 
     const wasmResponse = await fetch('/onig.wasm');
     shiki.setWasm(wasmResponse);
+    shiki
+        .getHighlighter({
+            theme: 'material-theme-palenight',
+            paths: { languages: '/languages', themes: '/themes' },
+        })
+        .then((value) => {
+            highlighter.value = value;
+        });
 
     loadingMessage.value = 'Fetching Token';
     const token = getToken();
@@ -64,7 +73,7 @@ onMounted(async () => {
     const rawData = await res.text();
     if (typeof rawData === 'string' && rawData.includes('401')) {
         window.localStorage.removeItem('auth');
-        errorMessage.value = `Unauthorized to View Content`;
+        errorMessage.value = `Session Expired. Login again.`;
         isLoading.value = false;
         content.value = undefined;
         isAuthenticated.value = false;
@@ -89,17 +98,26 @@ onMounted(async () => {
         return;
     }
 
-    loadingMessage.value = 'Converting File';
-    const highlighter = await shiki.getHighlighter({
-        theme: 'material-theme-palenight',
-        paths: { languages: '/languages', themes: '/themes' },
-    });
+    if (!highlighter.value) {
+        loadingMessage.value = 'Loading Highlighter Plugin';
+        await new Promise((resolve) => {
+            const interval = setInterval(() => {
+                if (!highlighter.value) {
+                    return;
+                }
 
+                clearInterval(interval);
+                resolve();
+            }, 50);
+        });
+    }
+
+    loadingMessage.value = 'Converting File';
     const md = new MD({
         html: true,
         linkify: true,
         highlight: (code, lang) => {
-            return highlighter.codeToHtml(code, { lang });
+            return highlighter.value.codeToHtml(code, { lang });
         },
     });
 
