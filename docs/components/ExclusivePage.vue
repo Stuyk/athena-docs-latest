@@ -7,6 +7,7 @@ const content = ref(undefined);
 const isLoading = ref(true);
 const isAuthenticated = ref(false);
 const errorMessage = ref('You are attempting to access subscriber only content.');
+const loadingMessage = ref('Loading');
 
 const debug = false;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
@@ -23,9 +24,12 @@ const getToken = () => {
 };
 
 onMounted(async () => {
+    loadingMessage.value = 'Loading WASM Plugin';
+
     const wasmResponse = await fetch('/onig.wasm');
     shiki.setWasm(wasmResponse);
 
+    loadingMessage.value = 'Fetching Token';
     const token = getToken();
     if (typeof token === 'undefined' || !token) {
         errorMessage.value = 'Not logged into Discord';
@@ -45,6 +49,7 @@ onMounted(async () => {
         }),
     };
 
+    loadingMessage.value = 'Fetching File';
     const res = await fetch(`${apiURL.value}/file`, format).catch(async (err) => {
         return;
     });
@@ -84,6 +89,7 @@ onMounted(async () => {
         return;
     }
 
+    loadingMessage.value = 'Converting File';
     const highlighter = await shiki.getHighlighter({
         theme: 'material-theme-palenight',
         paths: { languages: '/languages', themes: '/themes' },
@@ -123,7 +129,7 @@ onMounted(async () => {
                 <div></div>
                 <div></div>
             </div>
-            <span class="loading-text">Loading</span>
+            <span class="loading-text">{{ loadingMessage }}</span>
         </div>
     </template>
 </template>
