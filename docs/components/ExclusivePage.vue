@@ -1,15 +1,16 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import MD from 'markdown-it';
-
-const md = new MD();
+import * as shiki from 'shiki';
 
 const content = ref(undefined);
 const isLoading = ref(true);
 const isAuthenticated = ref(false);
+const errorMessage = ref('You are attempting to access subscriber only content.');
 
-const debug = false;
+const debug = true;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
+const hideLink = ref(false);
 
 const props = defineProps({
     path: {
@@ -22,8 +23,12 @@ const getToken = () => {
 };
 
 onMounted(async () => {
+    const wasmResponse = await fetch('/onig.wasm');
+    shiki.setWasm(wasmResponse);
+
     const token = getToken();
     if (typeof token === 'undefined' || !token) {
+        errorMessage.value = 'Not logged into Discord';
         isLoading.value = false;
         content.value = undefined;
         return;
@@ -41,11 +46,11 @@ onMounted(async () => {
     };
 
     const res = await fetch(`${apiURL.value}/file`, format).catch(async (err) => {
-        console.log(err);
         return;
     });
 
     if (!res || !res.ok || res.status !== 200) {
+        errorMessage.value = `Not in Discord Server, or Subscribed`;
         isLoading.value = false;
         content.value = undefined;
         return;
@@ -53,18 +58,44 @@ onMounted(async () => {
 
     const rawData = await res.text();
     if (typeof rawData === 'string' && rawData.includes('401')) {
+        window.localStorage.removeItem('auth');
+        errorMessage.value = `Unauthorized to View Content`;
         isLoading.value = false;
         content.value = undefined;
         isAuthenticated.value = false;
         return;
     }
 
+    if (typeof rawData === 'string' && rawData.includes('404')) {
+        errorMessage.value = `404 - Content was not found.`;
+        isLoading.value = false;
+        content.value = undefined;
+        isAuthenticated.value = false;
+        hideLink.value = true;
+        return;
+    }
+
     if (rawData.includes('�')) {
+        errorMessage.value = `Invalid File Format. Notify Admin.`;
         isLoading.value = false;
         content.value = undefined;
         isAuthenticated.value = true;
+        hideLink.value = true;
         return;
     }
+
+    const highlighter = await shiki.getHighlighter({
+        theme: 'material-theme-palenight',
+        paths: { languages: '/languages', themes: '/themes' },
+    });
+
+    const md = new MD({
+        html: true,
+        linkify: true,
+        highlight: (code, lang) => {
+            return highlighter.codeToHtml(code, { lang });
+        },
+    });
 
     content.value = md.render(rawData);
     isLoading.value = false;
@@ -73,32 +104,38 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div class="vp-wrapper" v-if="!isLoading">
-        <div class="vp-doc" v-if="content">
-            <div v-html="content" />
-        </div>
-        <div class="vp-doc" v-if="!isAuthenticated">
-            <div class="stack">
-                <span class="mb-4">❌ Failed Authentication</span>
-                <a :href="apiURL + '/url' + '/redirect'" title="Try Authentication Again?">Try Logging in Again</a>
+    <template v-if="!isLoading">
+        <div>
+            <div v-html="content" v-if="content" />
+            <div class="loading stack" v-else>
+                <h3>❌ {{ errorMessage }}</h3>
+                <a class="mt-4" :href="apiURL + '/url' + '/redirect'" title="Login with Discord" v-if="!hideLink">
+                    Login with Discord
+                </a>
             </div>
         </div>
-    </div>
-    <div class="loading" v-else>
-        <div class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    </template>
+    <template v-else>
+        <div class="loading">
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span class="loading-text">Loading</span>
         </div>
-        <span class="loading-text">Authenticating...</span>
-    </div>
+    </template>
 </template>
 
 <style>
 .loading {
     display: flex;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 128px;
+    padding-bottom: 64px;
 }
 
 .loading-text {
@@ -203,6 +240,18 @@ onMounted(async () => {
 }
 
 .mb-4 {
-    margin-bottom: 4vh;
+    margin-bottom: 12px;
+}
+
+.mt-4 {
+    margin-top: 12px;
+}
+
+pre {
+    background-color: #2f2f2f !important;
+    border-radius: 8px;
+    margin: 16px 0;
+    overflow-x: auto;
+    padding: 24px;
 }
 </style>

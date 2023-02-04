@@ -308,6 +308,11 @@
     "@algolia/requester-node-http" "4.14.2"
     "@algolia/transporter" "4.14.2"
 
+"ansi-sequence-parser@^1.1.0":
+  "integrity" "sha512-lEm8mt52to2fT8GhciPCGeCXACSz2UwIN4X2e2LJSnZ5uAbn2/dsYdOmUXq0AtWS5cpAupysIneExOgH0Vd2TQ=="
+  "resolved" "https://registry.npmjs.org/ansi-sequence-parser/-/ansi-sequence-parser-1.1.0.tgz"
+  "version" "1.1.0"
+
 "argparse@^1.0.7":
   "integrity" "sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg=="
   "resolved" "https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz"
@@ -486,7 +491,7 @@
     "argparse" "^1.0.7"
     "esprima" "^4.0.0"
 
-"jsonc-parser@^3.0.0":
+"jsonc-parser@^3.0.0", "jsonc-parser@^3.2.0":
   "integrity" "sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w=="
   "resolved" "https://registry.npmjs.org/jsonc-parser/-/jsonc-parser-3.2.0.tgz"
   "version" "3.2.0"
@@ -611,6 +616,16 @@
     "vscode-oniguruma" "^1.6.1"
     "vscode-textmate" "^6.0.0"
 
+"shiki@^0.14.0":
+  "integrity" "sha512-fb9Fg1Yx/ElVJcTqPQIEOSfn7mSZlrT1W3CkymY08lL2Jsi+t7jPcZzKO1lCsQwlSDuyNhHvolnyA2OI4EgJNg=="
+  "resolved" "https://registry.npmjs.org/shiki/-/shiki-0.14.0.tgz"
+  "version" "0.14.0"
+  dependencies:
+    "ansi-sequence-parser" "^1.1.0"
+    "jsonc-parser" "^3.2.0"
+    "vscode-oniguruma" "^1.7.0"
+    "vscode-textmate" "^8.0.0"
+
 "source-map-js@^1.0.2":
   "integrity" "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw=="
   "resolved" "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
@@ -687,15 +702,20 @@
     "vite" "^3.0.8"
     "vue" "^3.2.37"
 
-"vscode-oniguruma@^1.6.1":
-  "integrity" "sha512-KH8+KKov5eS/9WhofZR8M8dMHWN2gTxjMsG4jd04YhpbPR91fUj7rYQ2/XjeHCJWbg7X++ApRIU9NUwM2vTvLA=="
-  "resolved" "https://registry.npmjs.org/vscode-oniguruma/-/vscode-oniguruma-1.6.2.tgz"
-  "version" "1.6.2"
+"vscode-oniguruma@^1.6.1", "vscode-oniguruma@^1.7.0":
+  "integrity" "sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA=="
+  "resolved" "https://registry.npmjs.org/vscode-oniguruma/-/vscode-oniguruma-1.7.0.tgz"
+  "version" "1.7.0"
 
 "vscode-textmate@^6.0.0":
   "integrity" "sha512-gu73tuZfJgu+mvCSy4UZwd2JXykjK9zAZsfmDeut5dx/1a7FeTk0XwJsSuqQn+cuMCGVbIBfl+s53X4T19DnzQ=="
   "resolved" "https://registry.npmjs.org/vscode-textmate/-/vscode-textmate-6.0.0.tgz"
   "version" "6.0.0"
+
+"vscode-textmate@^8.0.0":
+  "integrity" "sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg=="
+  "resolved" "https://registry.npmjs.org/vscode-textmate/-/vscode-textmate-8.0.0.tgz"
+  "version" "8.0.0"
 
 "vue-demi@*":
   "integrity" "sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A=="
