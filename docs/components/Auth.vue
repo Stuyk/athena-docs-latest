@@ -12,6 +12,24 @@ const verifyAuthentication = async () => {
         return false;
     }
 
+    const res = await fetch(`${apiURL.value}/verify`, {
+        method: 'GET',
+        headers: {
+            Token: token,
+        },
+    }).catch(async (err) => {
+        return;
+    });
+
+    if (!res.ok) {
+        return false;
+    }
+
+    const response = await res.json();
+    if (response.code === 401) {
+        return false;
+    }
+
     isAuthenticated.value = true;
     return true;
 };

@@ -1,7 +1,5 @@
 <script setup>
 import { onMounted, ref } from 'vue';
-import MD from 'markdown-it';
-import * as shiki from 'shiki';
 
 const content = ref(undefined);
 const isLoading = ref(true);
@@ -12,7 +10,6 @@ const loadingMessage = ref('Loading');
 const debug = false;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
 const hideLink = ref(false);
-const highlighter = ref(undefined);
 
 const props = defineProps({
     path: {
@@ -25,19 +22,6 @@ const getToken = () => {
 };
 
 onMounted(async () => {
-    loadingMessage.value = 'Loading WASM Plugin';
-
-    const wasmResponse = await fetch('/onig.wasm');
-    shiki.setWasm(wasmResponse);
-    shiki
-        .getHighlighter({
-            theme: 'material-theme-palenight',
-            paths: { languages: '/languages', themes: '/themes' },
-        })
-        .then((value) => {
-            highlighter.value = value;
-        });
-
     loadingMessage.value = 'Fetching Token';
     const token = getToken();
     if (typeof token === 'undefined' || !token) {
@@ -58,7 +42,7 @@ onMounted(async () => {
         }),
     };
 
-    loadingMessage.value = 'Fetching File';
+    loadingMessage.value = 'Rendering File';
     const res = await fetch(`${apiURL.value}/file`, format).catch(async (err) => {
         return;
     });
@@ -89,39 +73,7 @@ onMounted(async () => {
         return;
     }
 
-    if (rawData.includes('�')) {
-        errorMessage.value = `Invalid File Format. Notify Admin.`;
-        isLoading.value = false;
-        content.value = undefined;
-        isAuthenticated.value = true;
-        hideLink.value = true;
-        return;
-    }
-
-    if (!highlighter.value) {
-        loadingMessage.value = 'Loading Highlighter Plugin';
-        await new Promise((resolve) => {
-            const interval = setInterval(() => {
-                if (!highlighter.value) {
-                    return;
-                }
-
-                clearInterval(interval);
-                resolve();
-            }, 50);
-        });
-    }
-
-    loadingMessage.value = 'Converting File';
-    const md = new MD({
-        html: true,
-        linkify: true,
-        highlight: (code, lang) => {
-            return highlighter.value.codeToHtml(code, { lang });
-        },
-    });
-
-    content.value = md.render(rawData);
+    content.value = rawData;
     isLoading.value = false;
     isAuthenticated.value = true;
 });
