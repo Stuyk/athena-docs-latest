@@ -8,7 +8,7 @@ const isLoading = ref(true);
 const isAuthenticated = ref(false);
 const errorMessage = ref('You are attempting to access subscriber only content.');
 
-const debug = true;
+const debug = false;
 const apiURL = ref(debug ? 'http://127.0.0.1:5555' : 'https://api.athenaframework.com');
 const hideLink = ref(false);
 
