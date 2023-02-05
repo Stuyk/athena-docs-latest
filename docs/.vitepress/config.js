@@ -111,6 +111,10 @@ export default async () => {
                     text: 'Subscribers',
                     items: [
                         {
+                            text: 'Subscribe',
+                            link: 'https://discord.com/channels/790039623648542760/role-subscriptions'
+                        },
+                        {
                             text: 'Articles',
                             items: [
                                 {
@@ -119,7 +123,6 @@ export default async () => {
                                 },
                             ],
                         },
-
                         {
                             text: 'Tools',
                             items: [

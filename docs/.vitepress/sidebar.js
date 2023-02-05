@@ -132,8 +132,18 @@ export function getSidebar() {
         '/subscriber/tutorials': [
             {
                 text: 'Tutorials',
-                collapsible: false,
+                collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials')
+            },
+            {
+                text: 'Beginners',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/beginners')
+            },
+            {
+                text: 'Inventory',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/inventory')
             },
         ]
     };
