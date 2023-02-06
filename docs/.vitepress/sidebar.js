@@ -141,6 +141,11 @@ export function getSidebar() {
                 items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/beginners')
             },
             {
+                text: 'Database',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/database')
+            },
+            {
                 text: 'Inventory',
                 collapsible: true,
                 items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/inventory')
