@@ -69,43 +69,8 @@ export default async () => {
 
                 },
                 {
-                    text: 'Docs',
-                    items: [
-                        {
-                            text: 'API',
-                            items: [
-                                {
-                                    text: 'API Server',
-                                    link: '/api-server/intro',
-                                },
-                                {
-                                    text: 'API Client',
-                                    link: '/api-client/intro',
-                                },
-                            ]
-                        },
-                        {
-                            text: 'Plugins',
-                            items: [
-                                {
-                                    text: 'About Plugins',
-                                    link: '/plugins/about-plugins',
-                                },
-                                {
-                                    text: 'Creating Plugins',
-                                    link: '/plugins/creating-plugins',
-                                },
-                                {
-                                    text: 'Installing Plugins',
-                                    link: '/plugins/loading-plugins',
-                                },
-                                {
-                                    text: 'User Plugins',
-                                    link: '/user-plugins/index',
-                                },
-                            ]
-                        },
-                    ],
+                    text: 'API',
+                    link: 'https://stuyk.github.io/altv-athena/index.html'
                 },
                 {
                     text: 'Subscribers',
