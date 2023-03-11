@@ -29,6 +29,18 @@ export function getSidebar() {
                 items: SidebarBuilder.get.filesAndOrder('./docs/intro/mods')
             },
         ],
+        '/blog/': [
+            {
+                text: 'About',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/blog')
+            },
+            {
+                text: 'Posts',
+                collapsible: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/blog/posts')
+            },
+        ],
         '/plugins/': [
             {
                 text: 'Introduction',
