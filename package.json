@@ -7,7 +7,7 @@
     "dotenv": "^16.0.2",
     "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
-    "vitepress": "^1.0.0-alpha.13",
+    "vitepress": "^1.0.0-alpha.60",
     "vue": "^3.2.38"
   },
   "scripts": {

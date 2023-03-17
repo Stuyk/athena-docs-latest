@@ -26,12 +26,12 @@ export default async () => {
             // Navigation - Top of the Documentation Page Links
             nav: [
                 {
-                    text: 'API',
-                    link: 'https://stuyk.github.io/altv-athena/index.html'
-                },
-                {
                     text: 'Blog',
                     link: '/blog/index',
+                },
+                {
+                    text: 'API',
+                    link: 'https://stuyk.github.io/altv-athena/index.html'
                 },
                 {
                     text: 'Setup',

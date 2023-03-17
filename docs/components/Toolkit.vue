@@ -281,8 +281,4 @@ onMounted(() => {
     border-color: rgb(120, 226, 120);
     background: rgba(0, 0, 0, 0.1);
 }
-
-.aside {
-    display: none !important;
-}
 </style>

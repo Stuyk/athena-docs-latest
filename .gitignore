@@ -28,3 +28,4 @@ docs/.vitepress/dist/*
 .env
 
 docs/user-plugins/readmes
+docs/.vitepress/cache

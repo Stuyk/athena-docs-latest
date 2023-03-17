@@ -37,9 +37,10 @@ features:
 </div>
 
 <style>
-.image-container img {
-  max-width: 200px;
-  max-height: 200px;
+.image-src {
+  min-width: 200px !important;
+  max-width: 200px !important;
+  max-height: 200px !important;
 }
 
 .video {
