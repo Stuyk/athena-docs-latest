@@ -11,107 +11,47 @@ Installing on windows is very straight forward but you will need to do a handful
 
 Read them carefully, read them twice, and double check your steps.
 
-::: tip
-()\[]{}|:;'<>?,!@#$%^&\*+=\
-\
-These cannot be used in your folder pathing. Do **NOT** use them.
+## Rules for for Folder Paths
 
-:::
+This is **REALLY IMPORTANT** so please read carefully.
+
+* No special characters in your folder path.
+* **DO NOT** store Athena in a folder with brackets such as `[]{}()`.
+* Plain English folder paths work best
+  * If your Windows username contains non-english this may also be an issue.
 
 ## Dependencies
 
 You will need to install, setup, or create accounts for all of the links that are in this section.
 
-*   [Download and Install GIT](https://git-scm.com/downloads)
+* [Download and Install GIT](https://git-scm.com/downloads)
+  * Used to pull down and push up code changes to your repositories.
 
-    * Used to pull down and push up code changes to your repositories.
+* [Download and Install NodeJS 17-18](https://nodejs.org/en/download/current/)
+  * A runtime that runs JavaScript code.
+  * Using the incorrect version may cause issues.
 
+* [Download and Install MongoDB Community Server](https://www.mongodb.com/try/download/community)
+  * A NoSQL Database that is fast and easy.
 
-*   [Download and Install NodeJS 18+](https://nodejs.org/en/download/current/)
+* [Download and Install VSCode](https://code.visualstudio.com/download)
+  * An integrated development environment for writing code and getting suggestions as you write code.
 
-    * A runtime that runs JavaScript code.
-
-
-*   [Download and Install MongoDB Community Server](https://www.mongodb.com/try/download/community)
-
-    * A NoSQL Database that is fast and easy.
-
-
-*   [Download and Install VSCode](https://code.visualstudio.com/download)
-
-    * An integrated development environment for writing code and getting suggestions as you write code.
-
-
-*   [Create a GitHub Account](https://github.com/)
-
-    * GitHub will let you privately store a modified version of the Athena codebase.
-
+* [Create a GitHub Account](https://github.com/)
+  * GitHub will let you privately store a modified version of the Athena codebase.
 
 * [Download Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us\&gl=US)
   * Great for inputting commands like the ones you will see in this tutorial. Highly recommended to install and pin it to your desktop somewhere.
 
 ## Setup SSH Key
 
-GitHub has really good [SSH Setup Instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) but they may not be entirely clear for newer developers. If you are comfortable with normal documentation give the above link a try. Make sure to select the `windows` tab.
+You need to add an SSH key to your GitHub account.
 
-### Open Git Bash
+* [Setup SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+* [Add SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-Git Bash is something that should come with GIT by default. Enter `Git Bash` in your windows search to open it.
+Here's a [video guide](https://www.youtube.com/watch?v=a-zX_qc2S-M) if you need further help.
 
-![Git Bash in Windows Search](https://i.imgur.com/T9Kx1el.png)
-
-**Generate a New SSH Key**
-
-Enter the following in a Git Bash
-
-```
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
-
-When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
-
-It may ask you for a password.
-
-Hitting enter twice will automatically default to `no password`.
-
-**Start the SSH Agent**
-
-Enter the following in Git Bash.
-
-```
-eval "$(ssh-agent -s)"
-```
-
-_It should respond with 'Agent pid XYZ'_
-
-**Add the SSH Key to the SSH Agent**
-
-Enter the following in Git Bash:
-
-```
-ssh-add ~/.ssh/id_ed25519
-```
-
-**Add the SSH Key to GitHub**
-
-Enter the following in a Git Bash:
-
-```
-cat ~/.ssh/id_ed25519.pub
-```
-
-**Copy** the text printed from `ssh-ed25519` all the way to your email.
-
-
-![25519.pub key copy example](https://i.imgur.com/NPjcWhW.png)
-
-Navigate to your GitHub settings and the `SSH and GPG keys` section.
-
-Click on `New SSH Key`
-
-![Click New SSH Key to add it to your GitHub.](https://i.imgur.com/VyCobd5.png)
-
-Give the key a name, and **paste the public key into the larger text box**.
 
 ## Ensure MongoDB Running as a Service
 
@@ -145,51 +85,58 @@ _You can verify that ports have been opened successfully after you setup the res
 
 ## Setup Private Repo
 
-Create a **New** **Repository** on GitHub.
+* [Create a New Private Repository](https://github.com/new)
 
-Visit GitHub and ensure you are signed in.
+Leave everything as default, **do not** add any README files or anything else.
 
-![](https://i.imgur.com/6wSCjfu.png)
-
-Use the following settings and hit **create**.
-
-![](https://i.imgur.com/CfZm096.png)
-
-![](https://i.imgur.com/nlsGGOM.png)
-
-Leave the page open and do not touch anything. You need to do some other things first.
+Make sure you navigate to the next page where there's a URL ending in `.git` at the top.
 
 ### Clone into Private Repository
 
-Open a Windows Terminal such as command line or powershell. The author personally recommends [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab) from the Microsoft Store.
-
-Enter the following command(s) in order.
+Open a Windows Terminal such as command line or powershell.
 
 ```
-git clone https://github.com/Stuyk/altv-athena
-cd altv-athena
+git clone https://github.com/Stuyk/altv-athena altv-athena-private
 ```
 
-Once inside of the repository you need to setup a new remote URL. Copy the URL from the page you left open, and paste it where `url_for_other_repo_here` is in the command below.
-
-![](https://i.imgur.com/SmI37H9.png)
-
-After, running this command do the following command(s)
+Navigate into the folder through command line, or powershell.
 
 ```
-git remote set-url --push origin url_for_other_repo_here
+cd altv-athena-private
+```
+
+Go back to the page where we created a new private repository, and COPY the URL that is located in the box at the top
+
+![](https://i.imgur.com/UNKxVoz.png)
+
+_I don't specifically mean the URL in this image, go to your private repository page and copy that URL there._
+
+```
+git remote set-url --push THE_COPIED_URL_GOES_HERE
+```
+
+```
 git add *
+```
+
+```
 git commit -m "init"
+```
+
+```
 git push origin
+```
+
+```
 git remote add upstream https://github.com/Stuyk/altv-athena
+```
+
+```
 git remote set-url --push upstream DISABLE
 ```
 
-Instead of disabling the push upstream, you can also set this to your origin repository.
-
-An example of how to change the remote push URL is here:
-```ts
-git remote set-url --push origin your_repository_url
+```
+git remote set-url --push origin THE_COPIED_URL_GOES_HERE
 ```
 
 If you refresh the GitHub page you should see a clone of Athena inside of your private repository if you were successful.
