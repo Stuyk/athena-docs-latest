@@ -12,11 +12,6 @@ export default async () => {
         description: 'Roleplay Script for GTA:V',
         lastUpdated: true,
         cleanUrls: 'without-subfolders',
-        markdown: {
-            headers: {
-                level: [0, 0],
-            },
-        },
         themeConfig: {
             logo: '/logo.png',
             socialLinks: [
@@ -31,7 +26,12 @@ export default async () => {
                 },
                 {
                     text: 'API',
-                    link: 'https://stuyk.github.io/altv-athena/index.html'
+                    items: [
+                        {
+                            text: 'Server',
+                            link: '/api/server/index'
+                        }
+                    ]
                 },
                 {
                     text: 'Setup',
