@@ -31,10 +31,10 @@ jobs:
 
             - name: 'Move New API Docs'
               run: |
-                  mv ./altv-athena/docs/classes ./athena-docs/docs/api/classes
-                  mv ./altv-athena/docs/enums ./athena-docs/docs/api/enums
-                  mv ./altv-athena/docs/interfaces ./athena-docs/docs/api/interfaces
-                  mv ./altv-athena/docs/modules ./athena-docs/docs/api/modules
+                  mv ./altv-athena/classes ./athena-docs/docs/api/classes
+                  mv ./altv-athena/enums ./athena-docs/docs/api/enums
+                  mv ./altv-athena/interfaces ./athena-docs/docs/api/interfaces
+                  mv ./altv-athena/modules ./athena-docs/docs/api/modules
 
             - name: 'Test Pathing'
               run: ls ./athena-docs/docs/api
