@@ -10,19 +10,32 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-                  cache: yarn
-            - run: yarn install --frozen-lockfile
+            - name: Clone Docs Repo
+              uses: actions/checkout@v3
 
-            - name: Build
-              run: yarn build
-
-            - name: Deploy
-              uses: peaceiris/actions-gh-pages@v3
+            - name: Clone Athena Markdown API
+              uses: actions/checkout@v3
               with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: docs/.vitepress/dist
-                  cname: athenaframework.com
+                  repository: 'stuyk/altv-athena'
+                  ref: 'gh-pages'
+
+            - name: 'Testing Locations'
+              run: ls
+
+            # - name: 'Install NodeJS'
+            #   uses: actions/setup-node@v3
+            #   with:
+            #       node-version: 16
+
+            # - name: Install Docs
+            #   run: npm install
+
+            # - name: Build Docs
+            #   run: npm run build
+
+            # - name: Deploy
+            #   uses: peaceiris/actions-gh-pages@v3
+            #   with:
+            #       github_token: ${{ secrets.GITHUB_TOKEN }}
+            #       publish_dir: docs/.vitepress/dist
+            #       cname: athenaframework.com
