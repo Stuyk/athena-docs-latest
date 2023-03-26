@@ -24,7 +24,7 @@ order: 0
 
 #### Defined in
 
-[server/utility/hash.ts:51](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/hash.ts#L51)
+[server/utility/hash.ts:51](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/hash.ts#L51)
 
 ## Functions
 
@@ -46,7 +46,7 @@ Hash a plain text password with pbkdf2 hash and salt.
 
 #### Defined in
 
-[server/utility/hash.ts:8](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/hash.ts#L8)
+[server/utility/hash.ts:8](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/hash.ts#L8)
 
 ___
 
@@ -68,7 +68,7 @@ Hash a string of data into a persistent SHA256 hash.
 
 #### Defined in
 
-[server/utility/hash.ts:35](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/hash.ts#L35)
+[server/utility/hash.ts:35](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/hash.ts#L35)
 
 ___
 
@@ -90,7 +90,7 @@ Hash a string of data into a random SHA256 hash.
 
 #### Defined in
 
-[server/utility/hash.ts:46](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/hash.ts#L46)
+[server/utility/hash.ts:46](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/hash.ts#L46)
 
 ___
 
@@ -113,4 +113,4 @@ Test a pbkdf2 hash and salt against a plain text password.
 
 #### Defined in
 
-[server/utility/hash.ts:21](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/hash.ts#L21)
+[server/utility/hash.ts:21](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/hash.ts#L21)

@@ -34,7 +34,7 @@ Used to override sound trigger functions.
 
 #### Defined in
 
-[server/systems/sound.ts:129](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/sound.ts#L129)
+[server/systems/sound.ts:129](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/sound.ts#L129)
 
 ▸ **override**(`functionName`, `callback`): `any`
 
@@ -47,7 +47,7 @@ Used to override sound trigger functions.
 | Name | Type |
 | :------ | :------ |
 | `functionName` | ``"playSoundInDimension"`` |
-| `callback` | (`dimension`: `number`, `soundInfo`: [`Omit`](server_player_inventory__internal_.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"pos"``\>) => `any` |
+| `callback` | (`dimension`: `number`, `soundInfo`: [`Omit`](server_player_inventory_Internal.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"pos"``\>) => `any` |
 
 #### Returns
 
@@ -55,7 +55,7 @@ Used to override sound trigger functions.
 
 #### Defined in
 
-[server/systems/sound.ts:130](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/sound.ts#L130)
+[server/systems/sound.ts:130](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/sound.ts#L130)
 
 ▸ **override**(`functionName`, `callback`): `any`
 
@@ -68,7 +68,7 @@ Used to override sound trigger functions.
 | Name | Type |
 | :------ | :------ |
 | `functionName` | ``"playSoundInArea"`` |
-| `callback` | (`soundInfo`: [`Required`](server_extensions_extColshape__internal_.md#Required)<[`Omit`](server_player_inventory__internal_.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"volume"`` \| ``"target"``\>\>) => `any` |
+| `callback` | (`soundInfo`: [`Required`](server_extensions_extColshape_Internal.md#Required)<[`Omit`](server_player_inventory_Internal.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"volume"`` \| ``"target"``\>\>) => `any` |
 
 #### Returns
 
@@ -76,7 +76,7 @@ Used to override sound trigger functions.
 
 #### Defined in
 
-[server/systems/sound.ts:131](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/sound.ts#L131)
+[server/systems/sound.ts:131](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/sound.ts#L131)
 
 ___
 
@@ -105,7 +105,7 @@ SoundSystem
 
 #### Defined in
 
-[server/systems/sound.ts:51](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/sound.ts#L51)
+[server/systems/sound.ts:51](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/sound.ts#L51)
 
 ___
 
@@ -125,7 +125,7 @@ Sound
 
 | Name | Type |
 | :------ | :------ |
-| `soundInfo` | [`Required`](server_extensions_extColshape__internal_.md#Required)<[`Omit`](server_player_inventory__internal_.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"volume"`` \| ``"target"``\>\> |
+| `soundInfo` | [`Required`](server_extensions_extColshape_Internal.md#Required)<[`Omit`](server_player_inventory_Internal.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"volume"`` \| ``"target"``\>\> |
 
 #### Returns
 
@@ -133,7 +133,7 @@ Sound
 
 #### Defined in
 
-[server/systems/sound.ts:100](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/sound.ts#L100)
+[server/systems/sound.ts:100](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/sound.ts#L100)
 
 ___
 
@@ -155,7 +155,7 @@ Sound
 | Name | Type |
 | :------ | :------ |
 | `dimension` | `number` |
-| `soundInfo` | [`Omit`](server_player_inventory__internal_.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"pos"``\> |
+| `soundInfo` | [`Omit`](server_player_inventory_Internal.md#Omit)<[`CustomSoundInfo`](../interfaces/server_systems_sound_CustomSoundInfo.md), ``"pos"``\> |
 
 #### Returns
 
@@ -163,4 +163,4 @@ Sound
 
 #### Defined in
 
-[server/systems/sound.ts:73](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/sound.ts#L73)
+[server/systems/sound.ts:73](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/sound.ts#L73)

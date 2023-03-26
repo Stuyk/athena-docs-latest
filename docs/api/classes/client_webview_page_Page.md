@@ -29,7 +29,7 @@ Page
 
 #### Defined in
 
-[client/webview/page.ts:175](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L175)
+[client/webview/page.ts:175](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L175)
 
 ## Properties
 
@@ -39,7 +39,7 @@ Page
 
 #### Defined in
 
-[client/webview/page.ts:168](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L168)
+[client/webview/page.ts:168](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L168)
 
 ## Methods
 
@@ -67,7 +67,7 @@ Page
 
 #### Defined in
 
-[client/webview/page.ts:283](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L283)
+[client/webview/page.ts:283](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L283)
 
 ___
 
@@ -87,4 +87,4 @@ Page
 
 #### Defined in
 
-[client/webview/page.ts:209](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L209)
+[client/webview/page.ts:209](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L209)

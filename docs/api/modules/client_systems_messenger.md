@@ -29,7 +29,7 @@ order: 0
 
 #### Defined in
 
-[client/systems/messenger.ts:9](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L9)
+[client/systems/messenger.ts:9](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L9)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[client/systems/messenger.ts:8](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L8)
+[client/systems/messenger.ts:8](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L8)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[client/systems/messenger.ts:7](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L7)
+[client/systems/messenger.ts:7](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L7)
 
 ## Functions
 
@@ -92,23 +92,23 @@ Emits a message to all callbacks.
 
 #### Defined in
 
-[client/systems/messenger.ts:43](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L43)
+[client/systems/messenger.ts:43](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L43)
 
 ___
 
 ### getCommands
 
-▸ **getCommands**(): [`Omit`](server_player_inventory__internal_.md#Omit)<[`player`](server_config.md#player)<`alt.Player`\>, ``"callback"``\>[]
+▸ **getCommands**(): [`Omit`](server_player_inventory_Internal.md#Omit)<[`player`](server_config.md#player)<`alt.Player`\>, ``"callback"``\>[]
 
 Get the commands that this client has permission for.
 
 #### Returns
 
-[`Omit`](server_player_inventory__internal_.md#Omit)<[`player`](server_config.md#player)<`alt.Player`\>, ``"callback"``\>[]
+[`Omit`](server_player_inventory_Internal.md#Omit)<[`player`](server_config.md#player)<`alt.Player`\>, ``"callback"``\>[]
 
 #### Defined in
 
-[client/systems/messenger.ts:101](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L101)
+[client/systems/messenger.ts:101](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L101)
 
 ___
 
@@ -125,7 +125,7 @@ Newest message is always first element in array.
 
 #### Defined in
 
-[client/systems/messenger.ts:71](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L71)
+[client/systems/messenger.ts:71](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L71)
 
 ___
 
@@ -149,7 +149,7 @@ Useful for plugin creators.
 
 #### Defined in
 
-[client/systems/messenger.ts:34](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L34)
+[client/systems/messenger.ts:34](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L34)
 
 ___
 
@@ -173,7 +173,7 @@ Useful for plugin creators.
 
 #### Defined in
 
-[client/systems/messenger.ts:23](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L23)
+[client/systems/messenger.ts:23](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L23)
 
 ___
 
@@ -196,7 +196,7 @@ Commands must start with a forward slash. Such as '/'.
 
 #### Defined in
 
-[client/systems/messenger.ts:81](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L81)
+[client/systems/messenger.ts:81](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L81)
 
 ___
 
@@ -211,7 +211,7 @@ Which can be used to
 
 | Name | Type |
 | :------ | :------ |
-| `_commands` | [`Omit`](server_player_inventory__internal_.md#Omit)<`MessageCommand`<`Player`\>, ``"callback"``\>[] |
+| `_commands` | [`Omit`](server_player_inventory_Internal.md#Omit)<`MessageCommand`<`Player`\>, ``"callback"``\>[] |
 
 #### Returns
 
@@ -219,4 +219,4 @@ Which can be used to
 
 #### Defined in
 
-[client/systems/messenger.ts:91](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/systems/messenger.ts#L91)
+[client/systems/messenger.ts:91](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/systems/messenger.ts#L91)

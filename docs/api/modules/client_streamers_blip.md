@@ -29,7 +29,7 @@ Adds a blip manually to the blip controller.
 
 #### Defined in
 
-[client/streamers/blip.ts:46](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/blip.ts#L46)
+[client/streamers/blip.ts:46](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/blip.ts#L46)
 
 ___
 
@@ -53,4 +53,4 @@ The blip object.
 
 #### Defined in
 
-[client/streamers/blip.ts:68](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/blip.ts#L68)
+[client/streamers/blip.ts:68](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/blip.ts#L68)

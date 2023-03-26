@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](client_rmlui_menu_menuInterfaces__internal_.md)
+- [Internal](client_rmlui_menu_menuInterfaces_Internal.md)
 
 ## Interfaces
 

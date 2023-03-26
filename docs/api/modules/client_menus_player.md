@@ -30,7 +30,7 @@ order: 0
 
 #### Defined in
 
-[client/menus/player.ts:5](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/menus/player.ts#L5)
+[client/menus/player.ts:5](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/menus/player.ts#L5)
 
 ## Functions
 
@@ -58,7 +58,7 @@ PlayerWheelMenu
 
 #### Defined in
 
-[client/menus/player.ts:17](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/menus/player.ts#L17)
+[client/menus/player.ts:17](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/menus/player.ts#L17)
 
 ___
 
@@ -84,4 +84,4 @@ PlayerWheelMenu
 
 #### Defined in
 
-[client/menus/player.ts:28](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/menus/player.ts#L28)
+[client/menus/player.ts:28](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/menus/player.ts#L28)

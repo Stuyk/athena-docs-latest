@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](client_webview_page__internal_.md)
+- [Internal](client_webview_page_Internal.md)
 
 ## Classes
 

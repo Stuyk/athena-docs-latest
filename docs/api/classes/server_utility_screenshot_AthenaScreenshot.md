@@ -44,7 +44,7 @@ AthenaScreenshot
 
 #### Defined in
 
-[server/utility/screenshot.ts:59](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/screenshot.ts#L59)
+[server/utility/screenshot.ts:59](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/screenshot.ts#L59)
 
 ___
 
@@ -73,4 +73,4 @@ AthenaScreenshot
 
 #### Defined in
 
-[server/utility/screenshot.ts:23](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/screenshot.ts#L23)
+[server/utility/screenshot.ts:23](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/screenshot.ts#L23)

@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](client_rmlui_commands__internal_.md)
+- [Internal](client_rmlui_commands_Internal.md)
 
 ## Functions
 
@@ -23,7 +23,7 @@ order: 0
 
 #### Defined in
 
-[client/rmlui/commands/index.ts:277](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/commands/index.ts#L277)
+[client/rmlui/commands/index.ts:277](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/commands/index.ts#L277)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `inputInfo` | [`CommandInput`](../interfaces/client_rmlui_commands__internal__CommandInput.md) | `undefined` |
+| `inputInfo` | [`CommandInput`](../interfaces/client_rmlui_commands_Internal_CommandInput.md) | `undefined` |
 | `skipMenuCheck` | `boolean` | `false` |
 
 #### Returns
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[client/rmlui/commands/index.ts:247](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/commands/index.ts#L247)
+[client/rmlui/commands/index.ts:247](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/commands/index.ts#L247)
 
 ___
 
@@ -60,4 +60,4 @@ Returns whether or not this interface is open.
 
 #### Defined in
 
-[client/rmlui/commands/index.ts:308](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/commands/index.ts#L308)
+[client/rmlui/commands/index.ts:308](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/commands/index.ts#L308)

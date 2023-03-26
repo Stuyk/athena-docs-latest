@@ -31,7 +31,7 @@ OptionFor3DMenu
 
 #### Defined in
 
-[client/rmlui/menu3d/menu3DInterfaces.ts:15](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/menu3d/menu3DInterfaces.ts#L15)
+[client/rmlui/menu3d/menu3DInterfaces.ts:15](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/menu3d/menu3DInterfaces.ts#L15)
 
 ___
 
@@ -47,4 +47,4 @@ OptionFor3DMenu
 
 #### Defined in
 
-[client/rmlui/menu3d/menu3DInterfaces.ts:8](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/menu3d/menu3DInterfaces.ts#L8)
+[client/rmlui/menu3d/menu3DInterfaces.ts:8](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/menu3d/menu3DInterfaces.ts#L8)

@@ -32,7 +32,7 @@ AccountSystemRef
 
 #### Defined in
 
-[server/systems/account.ts:66](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/account.ts#L66)
+[server/systems/account.ts:66](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/account.ts#L66)
 
 ___
 
@@ -59,7 +59,7 @@ AccountSystemRef
 
 #### Defined in
 
-[server/systems/account.ts:36](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/account.ts#L36)
+[server/systems/account.ts:36](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/account.ts#L36)
 
 ___
 
@@ -84,7 +84,7 @@ Used to override any account system functionality
 
 #### Defined in
 
-[server/systems/account.ts:109](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/account.ts#L109)
+[server/systems/account.ts:109](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/account.ts#L109)
 
 ▸ **override**(`functionName`, `callback`): `any`
 
@@ -105,4 +105,4 @@ Used to override any account system functionality
 
 #### Defined in
 
-[server/systems/account.ts:110](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/account.ts#L110)
+[server/systems/account.ts:110](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/account.ts#L110)

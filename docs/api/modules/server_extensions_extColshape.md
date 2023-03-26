@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](server_extensions_extColshape__internal_.md)
+- [Internal](server_extensions_extColshape_Internal.md)
 
 ## Classes
 

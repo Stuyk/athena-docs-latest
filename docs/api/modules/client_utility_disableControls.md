@@ -25,7 +25,7 @@ order: 0
 
 #### Defined in
 
-[client/utility/disableControls.ts:25](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/disableControls.ts#L25)
+[client/utility/disableControls.ts:25](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/disableControls.ts#L25)
 
 ___
 
@@ -49,7 +49,7 @@ Completely disabled all local player controls.
 
 #### Defined in
 
-[client/utility/disableControls.ts:13](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/disableControls.ts#L13)
+[client/utility/disableControls.ts:13](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/disableControls.ts#L13)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[client/utility/disableControls.ts:37](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/disableControls.ts#L37)
+[client/utility/disableControls.ts:37](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/disableControls.ts#L37)

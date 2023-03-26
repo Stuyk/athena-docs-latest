@@ -23,7 +23,7 @@ Recipe
 
 #### Defined in
 
-[server/systems/inventory/crafting.ts:28](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/crafting.ts#L28)
+[server/systems/inventory/crafting.ts:28](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/crafting.ts#L28)
 
 ___
 
@@ -41,7 +41,7 @@ CraftRecipe
 
 #### Defined in
 
-[server/systems/inventory/crafting.ts:83](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/crafting.ts#L83)
+[server/systems/inventory/crafting.ts:83](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/crafting.ts#L83)
 
 ___
 
@@ -57,7 +57,7 @@ Recipe
 
 #### Defined in
 
-[server/systems/inventory/crafting.ts:36](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/crafting.ts#L36)
+[server/systems/inventory/crafting.ts:36](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/crafting.ts#L36)
 
 ___
 
@@ -75,14 +75,14 @@ CraftRecipe
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `data?` | [`Object`](../modules/server_systems_inventory_crafting__internal_.md#Object) \| (`item1`: `StoredItem`, `item2`: `StoredItem`) => [`Object`](../modules/server_systems_inventory_crafting__internal_.md#Object) | The custom data to start with on this item. If data migration is specified; the data will be stacked on top of this data object. |
+| `data?` | [`Object`](../modules/server_systems_inventory_crafting_Internal.md#Object) \| (`item1`: `StoredItem`, `item2`: `StoredItem`) => [`Object`](../modules/server_systems_inventory_crafting_Internal.md#Object) | The custom data to start with on this item. If data migration is specified; the data will be stacked on top of this data object. |
 | `dbName` | `string` | Name of the item. |
 | `quantity` | `number` | The amount of this item. |
 | `version?` | `number` | What version of this item to use. |
 
 #### Defined in
 
-[server/systems/inventory/crafting.ts:44](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/crafting.ts#L44)
+[server/systems/inventory/crafting.ts:44](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/crafting.ts#L44)
 
 ___
 
@@ -98,7 +98,7 @@ CraftRecipe
 
 #### Defined in
 
-[server/systems/inventory/crafting.ts:91](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/crafting.ts#L91)
+[server/systems/inventory/crafting.ts:91](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/crafting.ts#L91)
 
 ___
 
@@ -114,4 +114,4 @@ Recipe
 
 #### Defined in
 
-[server/systems/inventory/crafting.ts:20](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/crafting.ts#L20)
+[server/systems/inventory/crafting.ts:20](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/crafting.ts#L20)

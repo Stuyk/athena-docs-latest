@@ -31,4 +31,4 @@ order: 0
 
 #### Defined in
 
-[shared/enums/vehicleTypeFlags.ts:42](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/enums/vehicleTypeFlags.ts#L42)
+[shared/enums/vehicleTypeFlags.ts:42](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/enums/vehicleTypeFlags.ts#L42)

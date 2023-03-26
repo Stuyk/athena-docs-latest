@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](client_events_onInventoryUpdate__internal_.md)
+- [Internal](client_events_onInventoryUpdate_Internal.md)
 
 ## Variables
 
@@ -21,8 +21,8 @@ order: 0
 
 | Name | Type |
 | :------ | :------ |
-| `add` | (`callback`: [`InventoryUpdateCallback`](client_events_onInventoryUpdate__internal_.md#InventoryUpdateCallback)) => `void` |
+| `add` | (`callback`: [`InventoryUpdateCallback`](client_events_onInventoryUpdate_Internal.md#InventoryUpdateCallback)) => `void` |
 
 #### Defined in
 
-[client/events/onInventoryUpdate.ts:17](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/events/onInventoryUpdate.ts#L17)
+[client/events/onInventoryUpdate.ts:17](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/events/onInventoryUpdate.ts#L17)

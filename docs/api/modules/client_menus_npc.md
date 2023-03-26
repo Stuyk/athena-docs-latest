@@ -31,7 +31,7 @@ order: 0
 
 #### Defined in
 
-[client/menus/npc.ts:8](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/menus/npc.ts#L8)
+[client/menus/npc.ts:8](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/menus/npc.ts#L8)
 
 ## Functions
 
@@ -61,7 +61,7 @@ NpcWheelMenu
 
 #### Defined in
 
-[client/menus/npc.ts:21](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/menus/npc.ts#L21)
+[client/menus/npc.ts:21](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/menus/npc.ts#L21)
 
 ___
 
@@ -89,4 +89,4 @@ NpcWheelMenu
 
 #### Defined in
 
-[client/menus/npc.ts:33](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/menus/npc.ts#L33)
+[client/menus/npc.ts:33](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/menus/npc.ts#L33)

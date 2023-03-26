@@ -29,7 +29,7 @@ Create a client-only static pedestrian.
 
 #### Defined in
 
-[client/streamers/ped.ts:221](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/ped.ts#L221)
+[client/streamers/ped.ts:221](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/ped.ts#L221)
 
 ___
 
@@ -57,7 +57,7 @@ ClientPedController
 
 #### Defined in
 
-[client/streamers/ped.ts:184](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/ped.ts#L184)
+[client/streamers/ped.ts:184](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/ped.ts#L184)
 
 ___
 
@@ -81,4 +81,4 @@ Remove a client ped by uid
 
 #### Defined in
 
-[client/streamers/ped.ts:248](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/ped.ts#L248)
+[client/streamers/ped.ts:248](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/ped.ts#L248)

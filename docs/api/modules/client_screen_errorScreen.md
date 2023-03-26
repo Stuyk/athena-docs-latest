@@ -25,7 +25,7 @@ ErrorScreen
 
 #### Defined in
 
-[client/screen/errorScreen.ts:15](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/screen/errorScreen.ts#L15)
+[client/screen/errorScreen.ts:15](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/screen/errorScreen.ts#L15)
 
 ___
 
@@ -51,4 +51,4 @@ ErrorScreen
 
 #### Defined in
 
-[client/screen/errorScreen.ts:33](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/screen/errorScreen.ts#L33)
+[client/screen/errorScreen.ts:33](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/screen/errorScreen.ts#L33)

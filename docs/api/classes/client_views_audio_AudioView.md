@@ -46,7 +46,7 @@ AudioView
 
 #### Defined in
 
-[client/views/audio.ts:83](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/views/audio.ts#L83)
+[client/views/audio.ts:83](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/views/audio.ts#L83)
 
 ___
 
@@ -74,4 +74,4 @@ AudioView
 
 #### Defined in
 
-[client/views/audio.ts:96](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/views/audio.ts#L96)
+[client/views/audio.ts:96](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/views/audio.ts#L96)

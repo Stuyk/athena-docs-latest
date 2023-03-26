@@ -29,7 +29,7 @@ If pages are specified it only closes those specific pages.
 
 #### Defined in
 
-[server/webview/index.ts:22](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/webview/index.ts#L22)
+[server/webview/index.ts:22](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/webview/index.ts#L22)
 
 ___
 
@@ -59,4 +59,4 @@ ServerView
 
 #### Defined in
 
-[server/webview/index.ts:12](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/webview/index.ts#L12)
+[server/webview/index.ts:12](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/webview/index.ts#L12)

@@ -15,7 +15,7 @@ order: 0
 
 #### Defined in
 
-[client/streamers/object.ts:6](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/object.ts#L6)
+[client/streamers/object.ts:6](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/object.ts#L6)
 
 ## Functions
 
@@ -35,7 +35,7 @@ order: 0
 
 #### Defined in
 
-[client/streamers/object.ts:132](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/object.ts#L132)
+[client/streamers/object.ts:132](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/object.ts#L132)
 
 ___
 
@@ -59,7 +59,7 @@ Used to obtain a CreatedObject instance from a generic scriptID
 
 #### Defined in
 
-[client/streamers/object.ts:175](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/object.ts#L175)
+[client/streamers/object.ts:175](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/object.ts#L175)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[client/streamers/object.ts:156](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/streamers/object.ts#L156)
+[client/streamers/object.ts:156](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/streamers/object.ts#L156)

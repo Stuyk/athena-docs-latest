@@ -43,7 +43,7 @@ SharedItem
 
 #### Defined in
 
-[shared/interfaces/item.ts:204](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/interfaces/item.ts#L204)
+[shared/interfaces/item.ts:204](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/interfaces/item.ts#L204)
 
 ___
 
@@ -59,7 +59,7 @@ SharedItem
 
 #### Defined in
 
-[shared/interfaces/item.ts:196](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/interfaces/item.ts#L196)
+[shared/interfaces/item.ts:196](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/interfaces/item.ts#L196)
 
 ___
 
@@ -75,4 +75,4 @@ SharedItem
 
 #### Defined in
 
-[shared/interfaces/item.ts:212](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/interfaces/item.ts#L212)
+[shared/interfaces/item.ts:212](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/interfaces/item.ts#L212)

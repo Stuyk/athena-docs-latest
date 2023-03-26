@@ -25,12 +25,12 @@ IPage
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `onClose` | [`AnyCallback`](../modules/client_webview_page__internal_.md#AnyCallback) | Function to call when the View is closed. |
-| `onReady` | [`AnyCallback`](../modules/client_webview_page__internal_.md#AnyCallback) | Function to call when the View is loaded. Usually used to pass data to the WebView after it's ready. |
+| `onClose` | [`AnyCallback`](../modules/client_webview_page_Internal.md#AnyCallback) | Function to call when the View is closed. |
+| `onReady` | [`AnyCallback`](../modules/client_webview_page_Internal.md#AnyCallback) | Function to call when the View is loaded. Usually used to pass data to the WebView after it's ready. |
 
 #### Defined in
 
-[client/webview/page.ts:22](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L22)
+[client/webview/page.ts:22](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L22)
 
 ___
 
@@ -47,7 +47,7 @@ IPage
 
 #### Defined in
 
-[client/webview/page.ts:164](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L164)
+[client/webview/page.ts:164](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L164)
 
 ___
 
@@ -63,7 +63,7 @@ IPage
 
 #### Defined in
 
-[client/webview/page.ts:15](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L15)
+[client/webview/page.ts:15](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L15)
 
 ___
 
@@ -97,4 +97,4 @@ ___
 
 #### Defined in
 
-[client/webview/page.ts:34](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/webview/page.ts#L34)
+[client/webview/page.ts:34](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/webview/page.ts#L34)

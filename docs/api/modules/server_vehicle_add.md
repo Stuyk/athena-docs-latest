@@ -34,7 +34,7 @@ Used to override add owned vehicle functionality
 
 #### Defined in
 
-[server/vehicle/add.ts:195](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/vehicle/add.ts#L195)
+[server/vehicle/add.ts:195](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/vehicle/add.ts#L195)
 
 ▸ **override**(`functionName`, `callback`): `any`
 
@@ -47,7 +47,7 @@ Used to override add owned vehicle functionality
 | Name | Type |
 | :------ | :------ |
 | `functionName` | ``"toPlayer"`` |
-| `callback` | (`player`: `Player`, `model`: `string`, `pos`: `IVector3`, `options`: [`Omit`](server_player_inventory__internal_.md#Omit)<[`AddOptions`](../interfaces/server_vehicle_add_AddOptions.md), ``"doNotDespawn"``\>) => `Promise`<`boolean`\> |
+| `callback` | (`player`: `Player`, `model`: `string`, `pos`: `IVector3`, `options`: [`Omit`](server_player_inventory_Internal.md#Omit)<[`AddOptions`](../interfaces/server_vehicle_add_AddOptions.md), ``"doNotDespawn"``\>) => `Promise`<`boolean`\> |
 
 #### Returns
 
@@ -55,7 +55,7 @@ Used to override add owned vehicle functionality
 
 #### Defined in
 
-[server/vehicle/add.ts:196](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/vehicle/add.ts#L196)
+[server/vehicle/add.ts:196](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/vehicle/add.ts#L196)
 
 ___
 
@@ -84,7 +84,7 @@ Owner can be an identifier, group, etc.
 
 #### Defined in
 
-[server/vehicle/add.ts:134](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/vehicle/add.ts#L134)
+[server/vehicle/add.ts:134](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/vehicle/add.ts#L134)
 
 ___
 
@@ -104,7 +104,7 @@ The position specified is where the vehicle can be found.
 | `player` | `Player` | `undefined` |
 | `model` | `string` | `undefined` |
 | `pos` | `IVector3` | `undefined` |
-| `options` | [`Omit`](server_player_inventory__internal_.md#Omit)<[`AddOptions`](../interfaces/server_vehicle_add_AddOptions.md), ``"doNotDespawn"``\> | `undefined` |
+| `options` | [`Omit`](server_player_inventory_Internal.md#Omit)<[`AddOptions`](../interfaces/server_vehicle_add_AddOptions.md), ``"doNotDespawn"``\> | `undefined` |
 
 #### Returns
 
@@ -112,4 +112,4 @@ The position specified is where the vehicle can be found.
 
 #### Defined in
 
-[server/vehicle/add.ts:64](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/vehicle/add.ts#L64)
+[server/vehicle/add.ts:64](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/vehicle/add.ts#L64)

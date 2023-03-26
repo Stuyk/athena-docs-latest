@@ -25,4 +25,4 @@ order: 0
 
 #### Defined in
 
-[client/menus/animationMenus/emoteAnims.ts:3](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/menus/animationMenus/emoteAnims.ts#L3)
+[client/menus/animationMenus/emoteAnims.ts:3](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/menus/animationMenus/emoteAnims.ts#L3)

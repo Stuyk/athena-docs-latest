@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](shared_utility_classCheck__internal_.md)
+- [Internal](shared_utility_classCheck_Internal.md)
 
 ## Functions
 
@@ -21,7 +21,7 @@ order: 0
 
 | Name | Type |
 | :------ | :------ |
-| `funcOrClass` | `Function` \| [`ClassDecorator`](shared_utility_classCheck__internal_.md#ClassDecorator) |
+| `funcOrClass` | `Function` \| [`ClassDecorator`](shared_utility_classCheck_Internal.md#ClassDecorator) |
 
 #### Returns
 
@@ -29,4 +29,4 @@ order: 0
 
 #### Defined in
 
-[shared/utility/classCheck.ts:1](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/utility/classCheck.ts#L1)
+[shared/utility/classCheck.ts:1](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/utility/classCheck.ts#L1)

@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](shared_utility_flags__internal_.md)
+- [Internal](shared_utility_flags_Internal.md)
 
 ## Functions
 
@@ -25,8 +25,8 @@ Verify if a bitwise flag is enabled.
 
 | Name | Type |
 | :------ | :------ |
-| `flags` | `number` \| [`Permissions`](shared_utility_flags__internal_.md#Permissions) |
-| `flagToCheck` | `number` \| [`Permissions`](shared_utility_flags__internal_.md#Permissions) |
+| `flags` | `number` \| [`Permissions`](shared_utility_flags_Internal.md#Permissions) |
+| `flagToCheck` | `number` \| [`Permissions`](shared_utility_flags_Internal.md#Permissions) |
 
 #### Returns
 
@@ -34,4 +34,4 @@ Verify if a bitwise flag is enabled.
 
 #### Defined in
 
-[shared/utility/flags.ts:10](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/utility/flags.ts#L10)
+[shared/utility/flags.ts:10](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/utility/flags.ts#L10)

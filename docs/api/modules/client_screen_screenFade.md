@@ -29,7 +29,7 @@ Removes the black filter on a screen over time.
 
 #### Defined in
 
-[client/screen/screenFade.ts:11](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/screen/screenFade.ts#L11)
+[client/screen/screenFade.ts:11](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/screen/screenFade.ts#L11)
 
 ___
 
@@ -53,4 +53,4 @@ Turns a screen black over time.
 
 #### Defined in
 
-[client/screen/screenFade.ts:21](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/screen/screenFade.ts#L21)
+[client/screen/screenFade.ts:21](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/screen/screenFade.ts#L21)

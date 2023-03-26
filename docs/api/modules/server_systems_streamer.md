@@ -42,7 +42,7 @@ StreamerService
 
 #### Defined in
 
-[server/systems/streamer.ts:145](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/streamer.ts#L145)
+[server/systems/streamer.ts:145](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/streamer.ts#L145)
 
 ___
 
@@ -77,4 +77,4 @@ StreamerService
 
 #### Defined in
 
-[server/systems/streamer.ts:190](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/streamer.ts#L190)
+[server/systems/streamer.ts:190](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/streamer.ts#L190)

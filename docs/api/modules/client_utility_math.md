@@ -25,7 +25,7 @@ order: 0
 
 #### Defined in
 
-[client/utility/math.ts:12](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/math.ts#L12)
+[client/utility/math.ts:12](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/math.ts#L12)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[client/utility/math.ts:52](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/math.ts#L52)
+[client/utility/math.ts:52](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/math.ts#L52)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[client/utility/math.ts:3](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/math.ts#L3)
+[client/utility/math.ts:3](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/math.ts#L3)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[client/utility/math.ts:30](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/math.ts#L30)
+[client/utility/math.ts:30](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/math.ts#L30)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[client/utility/math.ts:7](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/math.ts#L7)
+[client/utility/math.ts:7](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/math.ts#L7)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[client/utility/math.ts:38](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/math.ts#L38)
+[client/utility/math.ts:38](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/math.ts#L38)
 
 ___
 
@@ -152,4 +152,4 @@ Could also be seen as rotAnglesToVector
 
 #### Defined in
 
-[client/utility/math.ts:22](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/utility/math.ts#L22)
+[client/utility/math.ts:22](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/utility/math.ts#L22)

@@ -42,13 +42,13 @@ LocaleController
 
 #### Defined in
 
-[shared/locale/locale.ts:46](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/locale/locale.ts#L46)
+[shared/locale/locale.ts:46](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/locale/locale.ts#L46)
 
 ___
 
 ### getWebviewLocale
 
-▸ `Static` **getWebviewLocale**(`key`): [`Object`](../modules/server_systems_inventory_crafting__internal_.md#Object)
+▸ `Static` **getWebviewLocale**(`key`): [`Object`](../modules/server_systems_inventory_crafting_Internal.md#Object)
 
 Returns an object of strings with labels for WebViews.
 
@@ -66,11 +66,11 @@ LocaleController
 
 #### Returns
 
-[`Object`](../modules/server_systems_inventory_crafting__internal_.md#Object)
+[`Object`](../modules/server_systems_inventory_crafting_Internal.md#Object)
 
 #### Defined in
 
-[shared/locale/locale.ts:67](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/locale/locale.ts#L67)
+[shared/locale/locale.ts:67](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/locale/locale.ts#L67)
 
 ___
 
@@ -98,4 +98,4 @@ LocaleController
 
 #### Defined in
 
-[shared/locale/locale.ts:34](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/locale/locale.ts#L34)
+[shared/locale/locale.ts:34](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/locale/locale.ts#L34)

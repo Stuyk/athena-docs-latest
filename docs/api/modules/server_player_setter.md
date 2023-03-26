@@ -32,7 +32,7 @@ SetPrototype
 
 #### Defined in
 
-[server/player/setter.ts:21](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/player/setter.ts#L21)
+[server/player/setter.ts:21](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/player/setter.ts#L21)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[server/player/setter.ts:43](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/player/setter.ts#L43)
+[server/player/setter.ts:43](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/player/setter.ts#L43)
 
 ___
 
@@ -78,7 +78,7 @@ Used to override any setter functions
 
 #### Defined in
 
-[server/player/setter.ts:74](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/player/setter.ts#L74)
+[server/player/setter.ts:74](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/player/setter.ts#L74)
 
 ▸ **override**(`functionName`, `callback`): `any`
 
@@ -99,7 +99,7 @@ Used to override any setter functions
 
 #### Defined in
 
-[server/player/setter.ts:75](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/player/setter.ts#L75)
+[server/player/setter.ts:75](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/player/setter.ts#L75)
 
 ▸ **override**(`functionName`, `callback`): `any`
 
@@ -120,7 +120,7 @@ Used to override any setter functions
 
 #### Defined in
 
-[server/player/setter.ts:76](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/player/setter.ts#L76)
+[server/player/setter.ts:76](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/player/setter.ts#L76)
 
 ___
 
@@ -147,4 +147,4 @@ SetPrototype
 
 #### Defined in
 
-[server/player/setter.ts:56](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/player/setter.ts#L56)
+[server/player/setter.ts:56](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/player/setter.ts#L56)

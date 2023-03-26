@@ -31,7 +31,7 @@ Create a sprite. Create a JavaScript object to start building the sprite.
 
 #### Defined in
 
-[client/rmlui/sprites/index.ts:222](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/sprites/index.ts#L222)
+[client/rmlui/sprites/index.ts:222](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/sprites/index.ts#L222)
 
 ___
 
@@ -53,7 +53,7 @@ Remove a sprite by `uid` and stop it from updating entirely.
 
 #### Defined in
 
-[client/rmlui/sprites/index.ts:246](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/sprites/index.ts#L246)
+[client/rmlui/sprites/index.ts:246](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/sprites/index.ts#L246)
 
 ___
 
@@ -70,7 +70,7 @@ Requires the `uid` specified to update it.
 | Name | Type |
 | :------ | :------ |
 | `uid` | `string` |
-| `sprite` | [`Partial`](server_controllers_textlabel__internal_.md#Partial)<[`SpriteInfo`](../interfaces/client_rmlui_sprites_SpriteInfo.md)\> |
+| `sprite` | [`Partial`](server_controllers_textlabel_Internal.md#Partial)<[`SpriteInfo`](../interfaces/client_rmlui_sprites_SpriteInfo.md)\> |
 
 #### Returns
 
@@ -78,4 +78,4 @@ Requires the `uid` specified to update it.
 
 #### Defined in
 
-[client/rmlui/sprites/index.ts:263](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/rmlui/sprites/index.ts#L263)
+[client/rmlui/sprites/index.ts:263](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/rmlui/sprites/index.ts#L263)

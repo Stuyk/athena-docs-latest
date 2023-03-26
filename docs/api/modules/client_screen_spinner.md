@@ -21,7 +21,7 @@ Used to clear the last set spinner.
 
 #### Defined in
 
-[client/screen/spinner.ts:13](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/screen/spinner.ts#L13)
+[client/screen/spinner.ts:13](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/screen/spinner.ts#L13)
 
 ___
 
@@ -43,4 +43,4 @@ Create a spinner to show in the bottom-right corner.
 
 #### Defined in
 
-[client/screen/spinner.ts:27](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/screen/spinner.ts#L27)
+[client/screen/spinner.ts:27](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/screen/spinner.ts#L27)

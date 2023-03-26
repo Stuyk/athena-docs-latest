@@ -25,7 +25,7 @@ order: 0
 
 | Name | Type |
 | :------ | :------ |
-| `interaction` | [`Required`](../modules/server_extensions_extColshape__internal_.md#Required)<[`Interaction`](../interfaces/shared_interfaces_interaction_Interaction.md)\> |
+| `interaction` | [`Required`](../modules/server_extensions_extColshape_Internal.md#Required)<[`Interaction`](../interfaces/shared_interfaces_interaction_Interaction.md)\> |
 
 #### Overrides
 
@@ -33,7 +33,7 @@ alt.ColshapeCylinder.constructor
 
 #### Defined in
 
-[server/extensions/extColshape.ts:13](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/extensions/extColshape.ts#L13)
+[server/extensions/extColshape.ts:13](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/extensions/extColshape.ts#L13)
 
 ## Properties
 
@@ -43,4 +43,4 @@ alt.ColshapeCylinder.constructor
 
 #### Defined in
 
-[server/extensions/extColshape.ts:9](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/extensions/extColshape.ts#L9)
+[server/extensions/extColshape.ts:9](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/extensions/extColshape.ts#L9)

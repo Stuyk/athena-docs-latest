@@ -22,7 +22,7 @@ order: 0
 
 #### Defined in
 
-[server/utility/closest.ts:44](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/closest.ts#L44)
+[server/utility/closest.ts:44](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/closest.ts#L44)
 
 ## Functions
 
@@ -47,7 +47,7 @@ Gets the closest player to a position.
 
 #### Defined in
 
-[server/utility/closest.ts:24](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/closest.ts#L24)
+[server/utility/closest.ts:24](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/closest.ts#L24)
 
 ___
 
@@ -71,4 +71,4 @@ Gets the closest vehicle to a position.
 
 #### Defined in
 
-[server/utility/closest.ts:12](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/utility/closest.ts#L12)
+[server/utility/closest.ts:12](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/utility/closest.ts#L12)

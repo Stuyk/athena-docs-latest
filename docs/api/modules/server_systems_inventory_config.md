@@ -9,7 +9,7 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](server_systems_inventory_config__internal_.md)
+- [Internal](server_systems_inventory_config_Internal.md)
 
 ## Functions
 
@@ -25,23 +25,23 @@ Use this function to disable weight restrictions on inventories.
 
 #### Defined in
 
-[server/systems/inventory/config.ts:49](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/config.ts#L49)
+[server/systems/inventory/config.ts:49](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/config.ts#L49)
 
 ___
 
 ### get
 
-▸ **get**(): typeof [`DEFAULT_CONFIG`](server_systems_inventory_config__internal_.md#DEFAULT_CONFIG)
+▸ **get**(): typeof [`DEFAULT_CONFIG`](server_systems_inventory_config_Internal.md#DEFAULT_CONFIG)
 
 Returns the current inventory configurations.
 
 #### Returns
 
-typeof [`DEFAULT_CONFIG`](server_systems_inventory_config__internal_.md#DEFAULT_CONFIG)
+typeof [`DEFAULT_CONFIG`](server_systems_inventory_config_Internal.md#DEFAULT_CONFIG)
 
 #### Defined in
 
-[server/systems/inventory/config.ts:42](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/config.ts#L42)
+[server/systems/inventory/config.ts:42](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/config.ts#L42)
 
 ___
 
@@ -73,4 +73,4 @@ Values set may not work with interfaces designed for default values above.
 
 #### Defined in
 
-[server/systems/inventory/config.ts:32](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/inventory/config.ts#L32)
+[server/systems/inventory/config.ts:32](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/inventory/config.ts#L32)

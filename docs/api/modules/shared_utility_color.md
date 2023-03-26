@@ -25,4 +25,4 @@ order: 0
 
 #### Defined in
 
-[shared/utility/color.ts:3](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/utility/color.ts#L3)
+[shared/utility/color.ts:3](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/utility/color.ts#L3)

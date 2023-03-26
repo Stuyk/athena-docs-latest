@@ -21,4 +21,4 @@ Find a default vehicle that has similar seating to the vehicle you are adding.
 
 #### Defined in
 
-[shared/information/vehicles.ts:11](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/information/vehicles.ts#L11)
+[shared/information/vehicles.ts:11](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/information/vehicles.ts#L11)

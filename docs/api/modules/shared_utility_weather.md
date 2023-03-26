@@ -9,17 +9,17 @@ order: 0
 
 ## Modules
 
-- [&lt;internal\&gt;](shared_utility_weather__internal_.md)
+- [Internal](shared_utility_weather_Internal.md)
 
 ## Type Aliases
 
 ### WEATHER\_KEY
 
-Ƭ **WEATHER\_KEY**: keyof typeof [`WEATHER_TYPE`](shared_utility_weather__internal_.md#WEATHER_TYPE)
+Ƭ **WEATHER\_KEY**: keyof typeof [`WEATHER_TYPE`](shared_utility_weather_Internal.md#WEATHER_TYPE)
 
 #### Defined in
 
-[shared/utility/weather.ts:19](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/utility/weather.ts#L19)
+[shared/utility/weather.ts:19](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/utility/weather.ts#L19)
 
 ## Functions
 
@@ -39,4 +39,4 @@ order: 0
 
 #### Defined in
 
-[shared/utility/weather.ts:21](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/shared/utility/weather.ts#L21)
+[shared/utility/weather.ts:21](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/shared/utility/weather.ts#L21)

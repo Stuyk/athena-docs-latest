@@ -41,4 +41,4 @@ InputView
 
 #### Defined in
 
-[client/views/input.ts:91](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/client/views/input.ts#L91)
+[client/views/input.ts:91](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/client/views/input.ts#L91)

@@ -40,7 +40,7 @@ None
 
 #### Defined in
 
-[server/systems/dev.ts:20](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/dev.ts#L20)
+[server/systems/dev.ts:20](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/dev.ts#L20)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[server/systems/dev.ts:7](https://github.com/Stuyk/altv-athena/blob/ae8402672/src/core/server/systems/dev.ts#L7)
+[server/systems/dev.ts:7](https://github.com/Stuyk/altv-athena/blob/552012ca4/src/core/server/systems/dev.ts#L7)

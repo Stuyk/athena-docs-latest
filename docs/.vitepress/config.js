@@ -10,6 +10,7 @@ export default async () => {
         base: BASE_URL,
         title: 'V5 Docs',
         description: 'Roleplay Script for GTA:V',
+        ignoreDeadLinks: true,
         lastUpdated: true,
         cleanUrls: 'without-subfolders',
         themeConfig: {
