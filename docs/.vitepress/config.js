@@ -27,12 +27,7 @@ export default async () => {
                 },
                 {
                     text: 'API',
-                    items: [
-                        {
-                            text: 'Server',
-                            link: '/api/server/index'
-                        }
-                    ]
+                    link: '/api/index'
                 },
                 {
                     text: 'Setup',
