@@ -36,23 +36,22 @@ jobs:
                   mv ./altv-athena/interfaces ./athena-docs/docs/api/interfaces
                   mv ./altv-athena/modules ./athena-docs/docs/api/modules
 
-            - name: 'Test Pathing'
-              run: ls ./athena-docs/docs/api
+            - name: 'Install NodeJS'
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
 
-            # - name: 'Install NodeJS'
-            #   uses: actions/setup-node@v3
-            #   with:
-            #       node-version: 16
+            - name: Install Docs
+              working-directory: 'athena-docs'
+              run: npm install
 
-            # - name: Install Docs
-            #   run: npm install
+            - name: Build Docs
+              working-directory: 'athena-docs'
+              run: npm run build
 
-            # - name: Build Docs
-            #   run: npm run build
-
-            # - name: Deploy
-            #   uses: peaceiris/actions-gh-pages@v3
-            #   with:
-            #       github_token: ${{ secrets.GITHUB_TOKEN }}
-            #       publish_dir: docs/.vitepress/dist
-            #       cname: athenaframework.com
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: athena-docs/docs/.vitepress/dist
+                  cname: athenaframework.com
