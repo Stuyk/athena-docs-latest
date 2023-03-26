@@ -1,6 +1,6 @@
 ---
 title: 'How to Read the API'
-outline: [1,2,3,4,5]
+outline: [1,5]
 order: -99999
 ---
 
@@ -80,6 +80,6 @@ ie. If we look at the property `scale` it clearly says it needs a `number` type.
 
 ## That's About It!
 
-There isn't much else to say about this other than trying a few functions in your own in VSCode, and utilizing the intellisense window that pops up as you are typing.
+There isn't much else to say about this other than trying a few functions on your own in VSCode, and utilizing the intellisense window that pops up as you are typing.
 
 Hope this helps someone out there understand API documentation a bit better.

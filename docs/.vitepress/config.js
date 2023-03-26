@@ -13,6 +13,10 @@ export default async () => {
         ignoreDeadLinks: true,
         lastUpdated: true,
         cleanUrls: 'without-subfolders',
+        markdown: {
+            lineNumbers: false,
+            defaultHighlightLang: 'ts'
+        },
         themeConfig: {
             logo: '/logo.png',
             socialLinks: [
