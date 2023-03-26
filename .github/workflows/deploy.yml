@@ -22,8 +22,22 @@ jobs:
                   ref: 'gh-pages'
                   path: 'altv-athena'
 
-            - name: 'Testing Locations'
-              run: ls
+            - name: 'Clean Old API Docs'
+              run: |
+                  rm -rf ./athena-docs/docs/api/classes
+                  rm -rf ./athena-docs/docs/api/enums
+                  rm -rf ./athena-docs/docs/api/interfaces
+                  rm -rf ./athena-docs/docs/api/modules
+
+            - name: 'Move New API Docs'
+              run: |
+                  mv ./altv-athena/docs/classes ./athena-docs/docs/api/classes
+                  mv ./altv-athena/docs/enums ./athena-docs/docs/api/enums
+                  mv ./altv-athena/docs/interfaces ./athena-docs/docs/api/interfaces
+                  mv ./altv-athena/docs/modules ./athena-docs/docs/api/modules
+
+            - name: 'Test Pathing'
+              run: ls ./athena-docs/docs/api
 
             # - name: 'Install NodeJS'
             #   uses: actions/setup-node@v3
