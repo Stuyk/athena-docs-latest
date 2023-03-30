@@ -3,23 +3,23 @@ title: 'Landing'
 layout: 'home'
 hero:
   name: 'Athena Framework'
-  tagline: 'A Roleplay Script built on alt:V for GTA:V'
+  tagline: 'A GTA:V Roleplay Toolbox for Scripting'
   image:
     src: '/logo.png'
     alt: 'alt:V'
   actions:
     - theme: 'alt'
-      text: 'Windows'
+      text: 'Install'
       link: '/intro/install/installing-on-windows'
     - theme: 'alt'
-      text: 'Blog Posts'
+      text: 'Docs'
+      link: '/api/index'
+    - theme: 'alt'
+      text: 'Latest Posts'
       link: '/blog/index'
     - theme: 'alt'
-      text: 'API'
-      link: 'https://stuyk.github.io/altv-athena/index.html'
-    - theme: 'alt'
-      text: 'Plugins'
-      link: '/plugins/about-plugins'
+      text: 'Subscribers'
+      link: '/subscriber/tutorials/index'
 features:
   - title: '🧰 A Starting Kit'
     details: 'Everything in the Athena Framework is built to let you code your roleplay game mode faster. Skip writing the hard stuff, and focus on the cool stuff.'
@@ -38,9 +38,9 @@ features:
 
 <style>
 .image-src {
-  min-width: 200px !important;
-  max-width: 200px !important;
-  max-height: 200px !important;
+  min-width: 250px !important;
+  max-width: 250px !important;
+  max-height: 250px !important;
 }
 
 .video {

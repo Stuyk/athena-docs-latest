@@ -50,14 +50,14 @@
     --vp-c-indigo-dark: #1d2f3f;
     --vp-c-indigo-darker: #14212e;
 
-    --vp-c-green: #42b8b8;
-    --vp-c-green-light: #59cdcd;
-    --vp-c-green-lighter: #72e5e5;
-    --vp-c-green-dark: #258989;
-    --vp-c-green-darker: #1c6969;
-    --vp-c-green-dimm-1: rgba(66, 180, 184, 0.5);
-    --vp-c-green-dimm-2: rgba(66, 180, 184, 0.25);
-    --vp-c-green-dimm-3: rgba(66, 174, 184, 0.05);
+    --vp-c-green: #ddb72f;
+    --vp-c-green-light: #ebc94c;
+    --vp-c-green-lighter: #f0d881;
+    --vp-c-green-dark: #caa933;
+    --vp-c-green-darker: #b89d3c;
+    --vp-c-green-dimm-1: rgba(184, 155, 66, 0.5);
+    --vp-c-green-dimm-2: rgba(184, 155, 66, 0.45);
+    --vp-c-green-dimm-3: rgba(184, 155, 66, 0.25);
 
     --vp-c-yellow: #ffc517;
     --vp-c-yellow-light: #fcd253;
@@ -358,4 +358,42 @@
 
     --vp-home-hero-image-background-image: none;
     --vp-home-hero-image-filter: none;
+}
+
+.Layout {
+    background-color: var(--vp-c-bg-alt) !important;
+    background: url('/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.aside-curtain {
+    display: none !important;
+}
+
+.VPSidebar {
+    background: rgba(48, 48, 48, 0.35) !important;
+}
+
+.curtain {
+    background: transparent !important;
+}
+
+.content-body {
+    background: transparent !important;
+}
+
+.curtain::before {
+    background: transparent !important;
+}
+
+.VPNav {
+    background: var(--vp-c-bg);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    border-bottom-color: transparent !important;
 }

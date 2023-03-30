@@ -125,7 +125,7 @@ onMounted(() => {
             </div>
             <div v-else>
                 <div>✔️ Connected</div>
-                <div class="stack info">
+                <div class="split info">
                     <div class="split pair">
                         <div class="key">Memory MB</div>
                         <div class="value">{{ memory.toFixed(2) }}</div>
@@ -157,12 +157,18 @@ onMounted(() => {
     </div>
 </template>
 
-<style>
+<style scoped>
 .page-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 48px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background: var(--vp-c-bg) !important;
 }
 
 .page {
@@ -190,7 +196,6 @@ onMounted(() => {
 .split .value {
     font-family: 'Consolas';
     flex-grow: 1;
-    background: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     padding: 6px;
     box-sizing: border-box;
@@ -203,6 +208,7 @@ onMounted(() => {
     border-radius: 6px;
     margin-top: 12px;
     box-sizing: border-box;
+    background: var(--vp-c-bg) !important;
 }
 
 .stack {
@@ -263,6 +269,7 @@ onMounted(() => {
     border-radius: 6px;
     margin-top: 12px;
     align-items: center;
+    background: var(--vp-c-bg) !important;
 }
 
 .tabs .tab {
@@ -275,10 +282,12 @@ onMounted(() => {
     cursor: pointer;
     padding-top: 12px;
     padding-bottom: 6px;
+    background: var(--vp-c-bg) !important;
 }
 
 .tabs .tab-active {
     border-color: rgb(120, 226, 120);
     background: rgba(0, 0, 0, 0.1);
+    background: var(--vp-c-bg) !important;
 }
 </style>
