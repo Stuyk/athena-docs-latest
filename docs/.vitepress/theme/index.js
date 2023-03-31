@@ -25,8 +25,9 @@ export default {
         giscusTalk({
             repo: 'Stuyk/altv-athena',
             repoId: 'MDEwOlJlcG9zaXRvcnkyOTg3MTM0NTg=',
+            category: 'Documentation Feedback',
             categoryId: 'MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyMjY2NDY0',
-            mapping: 'title',
+            mapping: 'path',
             term: 'Leave a comment!',
             reactionsEnabled: '1',
             lang: 'en',
