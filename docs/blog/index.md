@@ -1,6 +1,7 @@
 ---
 title: 'About Blog Posts'
 order: -99999
+comment: false
 ---
 
 # {{ $frontmatter.title }}

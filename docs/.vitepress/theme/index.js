@@ -5,6 +5,8 @@ import ToolkitComponent from '/components/Toolkit.vue';
 import UserPluginComponent from '/components/UserPlugin.vue';
 import AuthComponent from '/components/Auth.vue';
 import ExclusivePage from '/components/ExclusivePage.vue';
+import { useData, useRoute } from 'vitepress';
+import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import './athena.css'
 
 export default {
@@ -15,5 +17,21 @@ export default {
         app.component('Toolkit', ToolkitComponent);
         app.component('UserPlugin', UserPluginComponent);
         app.component('ExclusivePage', ExclusivePage);
+    },
+    setup() {
+        const { frontmatter } = useData();
+        const route = useRoute();
+
+        giscusTalk({
+            repo: 'Stuyk/altv-athena',
+            repoId: 'MDEwOlJlcG9zaXRvcnkyOTg3MTM0NTg=',
+            categoryId: 'MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyMjY2NDY0',
+            mapping: 'title',
+            term: 'Leave a comment!',
+            reactionsEnabled: '1',
+            lang: 'en',
+        }, {
+            frontmatter, route
+        });
     }
 }

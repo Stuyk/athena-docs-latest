@@ -1,6 +1,7 @@
 ---
 title: 'Creating Plugins'
 order: -98
+comment: false
 ---
 
 # {{ $frontmatter.title }}
