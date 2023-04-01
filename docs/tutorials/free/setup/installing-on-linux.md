@@ -9,19 +9,34 @@ order: -96
 
 Linux installation should be using Ubuntu 20.04+ or greater. The author of this documentation has used Ubuntu 20.04+ without any issues.
 
-::: tip
+::: warning Hey Listen!
 
-`()\[]{}|:;'<>?,!@#$%^&\*+=`
+Athena is **not a plug and play game mode**. If you cannot script, program, or code and are not willing to learn it is not advised to use this game mode.
 
-These cannot be used in your folder pathing. Do **NOT** use them.
-
-::::
-
-::: warning
-
-As a general recommendation, you should only be using Linux for production. It is highly recommended to develop on Athena in a Windows environment as the build times are much faster.
+<img src="https://i.imgur.com/0dA965J.png" width="45" />
 
 :::
+
+## Rules for for Folder Paths
+
+This is **REALLY IMPORTANT** so please read carefully.
+
+::: warning File Path Restrictions
+
+* No special characters in your folder path.
+* **DO NOT** store Athena in a folder with brackets such as `[]{}()`.
+* Plain English folder paths work best
+  * If your Windows username contains non-english this may also be an issue.
+
+:::
+
+## Why Linux?
+
+If your server is not ready for production **do not use linux**.
+
+If you want to do development use [Windows](installing-on-windows.md).
+
+GTA:V runs on Windows, so why use anything else.
 
 ## Dependencies
 
@@ -224,52 +239,58 @@ _You can verify that ports have been opened successfully after you setup the res
 
 ## Setup Private Repo
 
-Create a **New** **Repository** on GitHub.
+* [Create a New Private Repository](https://github.com/new)
 
-Visit GitHub and ensure you are signed in.
+Leave everything as default, **do not** add any README files or anything else.
 
-![](https://i.imgur.com/6wSCjfu.png)
-
-Use the following settings and hit **create**.
-
-![](https://i.imgur.com/CfZm096.png)
-
-![](https://i.imgur.com/nlsGGOM.png)
-
-Leave the page open and do not touch anything. You need to do some other things first.
-
+Make sure you navigate to the next page where there's a URL ending in `.git` at the top.
 
 ### Clone into Private Repository
 
-Open a Terminal.
-
-Enter the following command(s) in order.
+Open a Windows Terminal such as command line or powershell.
 
 ```
-git clone https://github.com/Stuyk/altv-athena
-cd altv-athena
+git clone https://github.com/Stuyk/altv-athena altv-athena-private
 ```
 
-Once inside of the repository you need to setup a new remote URL. Copy the URL from the page you left open, and paste it where `url_for_other_repo_here` is in the command below.
-
-![](https://i.imgur.com/SmI37H9.png)
-
-After, running this command do the following command(s)
+Navigate into the folder through command line, or powershell.
 
 ```
-git remote set-url --push origin url_for_other_repo_here
+cd altv-athena-private
+```
+
+Go back to the page where we created a new private repository, and COPY the URL that is located in the box at the top
+
+![](https://i.imgur.com/UNKxVoz.png)
+
+_I don't specifically mean the URL in this image, go to your private repository page and copy that URL there._
+
+```
+git remote set-url --push origin THE_COPIED_URL_GOES_HERE
+```
+
+```
 git add *
+```
+
+```
 git commit -m "init"
+```
+
+```
 git push origin
+```
+
+```
 git remote add upstream https://github.com/Stuyk/altv-athena
+```
+
+```
 git remote set-url --push upstream DISABLE
 ```
 
-Instead of disabling the push upstream, you can also set this to your origin repository.
-
-An example of how to change the remote push URL is here:
-```ts
-git remote set-url --push origin your_repository_url
+```
+git remote set-url --push origin THE_COPIED_URL_GOES_HERE
 ```
 
 If you refresh the GitHub page you should see a clone of Athena inside of your private repository if you were successful.
@@ -349,10 +370,4 @@ Remember to get the [https://altv.mp/](https://altv.mp) client and connect.
 If you are running this on your local machine you should connect to `127.0.0.1:7788`.
 
 If you are running this on an external server you should connect to the server's IP address.
-
-## Successful Installation
-
-A successful installation and bootup will look like the following:
-
-![](https://i.imgur.com/NuppQyc.png)
 

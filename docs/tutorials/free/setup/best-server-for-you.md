@@ -13,6 +13,12 @@ Avoid hosts that do not give you full control of your server. Server hosts like 
 
 :::
 
+::: danger
+
+Should you rent a server? NO. Wait until you are comfortable with using this framework on a local PC before doing anything else.
+
+:::
+
 ## Server Deployment and Infrastructure
 
 When you are working with the Athena Framework you will be creating a private fork. A private fork is a copy of the Athena repository that contains your changes. It will only contain your changes if you know how utilize `git`. Which is a tool used for pushing changes to repositories.

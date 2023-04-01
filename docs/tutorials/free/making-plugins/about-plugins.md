@@ -15,6 +15,14 @@ Let me preface with the following statements.
 * A **mlo** is not a plugin.
 * A **clothing item** is not a plugin.
 
+::: warning
+
+Anything that you purchase from any other developer that is **not made for Athena** is not a plugin.
+
+You will need more specific instructions from them to support Athena.
+
+:::
+
 ### What is a Plugin
 
 A repository with code that you can drag / drop.

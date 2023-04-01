@@ -1,21 +1,39 @@
 ---
-title: 'Staying up to date'
+title: 'Keeping Athena Updated'
 order: -94
 ---
 
 # {{ $frontmatter.title }}
 
+## Quick Update Instructions
+
+How to pull latest Athena updates from a specific branch.
+
+```
+git remote add upstream https://github.com/Stuyk/altv-athena
+git remote set-url --push upstream DISABLE
+git fetch upstream --all
+git pull upstream the_branch_you_want
+```
+
+If you modified files, you may have `merge conflicts`. Google it.
+
+
 ## Why Update?
 
 Well in most cases Athena is constantly moving forward with security patches, algorithm improvements, and new features. There is often a dedicated development branch that Stuyk and the community are constantly pushing changes into.
 
-If you do not update you run the risk of your game mode becoming out-of-date and unmanageable in the foreseeable future.&#x20;
+If you do not update you run the risk of your game mode becoming out-of-date and unmanageable in the foreseeable future.
 
 Want evidence of this? As the author of Athena I've witnessed my old game mode become completely unplayable after 6 months time of not updating. Too many features have become out-of-date and API changes have made it near impossible to update.
 
 So... what does the author recommend?
 
-> Stay up-to-date or risk the game mode breaking. Learn these tools you will not regret it.
+::: info
+
+Stay up-to-date or risk the game mode breaking. Learn `git` and your time with Athena will be much better for you and your pathway to becoming a better developer.
+
+:::
 
 ### How do I Update?
 

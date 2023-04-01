@@ -34,72 +34,15 @@ export default async () => {
                     link: '/api/index'
                 },
                 {
-                    text: 'Setup',
-                    items: [
-                        {
-                            text: 'Beginners',
-                            items: [
-                                {
-                                    text: 'Getting Started',
-                                    link: '/intro/intro/index',
-                                },
-
-                            ]
-                        },
-                        {
-                            text: 'Install',
-                            items: [
-                                {
-                                    text: 'Windows',
-                                    link: '/intro/install/installing-on-windows',
-                                },
-                                {
-                                    text: 'Linux',
-                                    link: '/intro/install/installing-on-linux',
-                                }
-                            ]
-                        },
-                        {
-                            text: 'Mods',
-                            items: [
-                                {
-                                    text: 'About',
-                                    link: '/intro/mods/about-mods',
-                                },
-                                {
-                                    text: 'Adding Mods',
-                                    link: '/intro/mods/adding-mods',
-                                }
-                            ]
-                        }
-
-                    ]
-
+                    text: 'Tutorials',
+                    link: '/tutorials/index'
                 },
                 {
-                    text: 'Subscribers',
+                    text: 'Tools',
                     items: [
                         {
-                            text: 'Subscribe',
-                            link: 'https://discord.com/channels/790039623648542760/role-subscriptions'
-                        },
-                        {
-                            text: 'Articles',
-                            items: [
-                                {
-                                    text: 'Tutorials',
-                                    link: '/subscriber/tutorials/index',
-                                },
-                            ],
-                        },
-                        {
-                            text: 'Tools',
-                            items: [
-                                {
-                                    text: 'Free - Athena Toolkit',
-                                    link: '/tools/toolkit',
-                                },
-                            ],
+                            text: 'Free - Athena Toolkit',
+                            link: '/tools/toolkit',
                         },
                     ],
                 },

@@ -1,18 +1,30 @@
 ---
 title: 'Getting Started'
-order: -99
+order: -99999
 comment: false
 ---
 
 # {{ $frontmatter.title }}
 
+
+
 ## Full Installation
 
 It is recommended to do a full install but quick instructions are provided below.
 
-[Installing on Windows](../install/installing-on-windows.md)
+::: warning Hey Listen!
 
-[Installing on Linux](../install/installing-on-linux.md)
+Athena is **not a plug and play game mode**. If you cannot script, program, or code and are not willing to learn it is not advised to use this game mode.
+
+<img src="https://i.imgur.com/0dA965J.png" width="45" />
+
+:::
+
+### Install Guides
+
+* [Installing on Windows](../install/installing-on-windows.md)
+
+* [Installing on Linux](../install/installing-on-linux.md)
 
 ## Fast Installation
 

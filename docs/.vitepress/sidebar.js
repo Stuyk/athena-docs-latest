@@ -36,33 +36,6 @@ function groupByPathway(folderPath, filterByName) {
 
 export function getSidebar() {
     return {
-        '/intro/': [
-            {
-                text: 'Introduction',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/intro/intro')
-            },
-            {
-                text: 'Install',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/intro/install')
-            },
-            {
-                text: 'Info',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/intro/info')
-            },
-            {
-                text: 'How Do I?',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/intro/how-do-i')
-            },
-            {
-                text: 'Mods',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/intro/mods')
-            },
-        ],
         '/blog/': [
             {
                 text: 'About',
@@ -75,43 +48,27 @@ export function getSidebar() {
                 items: SidebarBuilder.get.filesAndOrder('./docs/blog/posts')
             },
         ],
-        '/plugins/': [
+        '/tutorials': [
             {
-                text: 'Introduction',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/plugins')
-            },
-            ...SidebarBuilder.get.foldersAndOrder('./docs/plugins')
-        ],
-        '/user-plugins': [
-            {
-                text: 'Info',
-                collapsible: false,
-                items: SidebarBuilder.get.filesAndOrder('./docs/user-plugins')
-            },
-            ...SidebarBuilder.get.foldersAndOrder('./docs/user-plugins/readmes')
-        ],
-        '/subscriber/tutorials': [
-            {
-                text: 'Tutorials',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials')
+                text: 'Setup',
+                collapsed: false,
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/setup')
             },
             {
-                text: 'Beginners',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/beginners')
+                text: 'Making Plugins',
+                collapsed: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/making-plugins')
             },
             {
-                text: 'Database',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/database')
+                text: 'Modding',
+                collapsed: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/modding')
             },
             {
-                text: 'Inventory',
-                collapsible: true,
-                items: SidebarBuilder.get.filesAndOrder('./docs/subscriber/tutorials/inventory')
-            },
+                text: 'Subscribers Only',
+                collapsed: true,
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/premium')
+            }
         ],
         '/api': [
             {

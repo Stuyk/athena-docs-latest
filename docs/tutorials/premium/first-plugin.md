@@ -1,6 +1,6 @@
 ---
 title: 'Your First Plugin'
-order: 0
+order: -99
 comment: false
 ---
 

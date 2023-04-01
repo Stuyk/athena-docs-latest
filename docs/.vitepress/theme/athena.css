@@ -377,6 +377,12 @@
     background: rgba(48, 48, 48, 0.35) !important;
 }
 
+@media only screen and (max-width: 600px) {
+    .VPSidebar {
+        background: rgba(30, 30, 30, 1) !important;
+    }
+}
+
 .curtain {
     background: transparent !important;
 }

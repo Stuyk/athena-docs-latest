@@ -11,14 +11,36 @@ Installing on windows is very straight forward but you will need to do a handful
 
 Read them carefully, read them twice, and double check your steps.
 
+::: warning Hey Listen!
+
+Athena is **not a plug and play game mode**. If you cannot script, program, or code and are not willing to learn it is not advised to use this game mode.
+
+<img src="https://i.imgur.com/0dA965J.png" width="45" />
+
+:::
+
+
 ## Rules for for Folder Paths
 
 This is **REALLY IMPORTANT** so please read carefully.
+
+::: warning File Path Restrictions
 
 * No special characters in your folder path.
 * **DO NOT** store Athena in a folder with brackets such as `[]{}()`.
 * Plain English folder paths work best
   * If your Windows username contains non-english this may also be an issue.
+
+:::
+
+## Do I Need a Server?
+
+**No.** Wait until you are comfortable using this framework on a locally before renting.
+
+Do not use a VPS, do not use an external windows instance.
+
+Learn to the tools first.
+
 
 ## Dependencies
 
@@ -112,7 +134,7 @@ Go back to the page where we created a new private repository, and COPY the URL 
 _I don't specifically mean the URL in this image, go to your private repository page and copy that URL there._
 
 ```
-git remote set-url --push THE_COPIED_URL_GOES_HERE
+git remote set-url --push origin THE_COPIED_URL_GOES_HERE
 ```
 
 ```
@@ -234,9 +256,3 @@ Remember to get the [https://altv.mp/](https://altv.mp) client and connect.
 If you are running this on your local machine you should connect to `127.0.0.1:7788` or `0.0.0.0:7788` if it does not work.
 
 If you are running this on an external server you should connect to the server's IP address.
-
-## Successful Installation
-
-A successful installation and bootup will look like the following...
-
-![](https://i.imgur.com/NuppQyc.png)
