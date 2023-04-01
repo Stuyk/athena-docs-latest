@@ -41,7 +41,7 @@ export default async () => {
                     text: 'Tools',
                     items: [
                         {
-                            text: 'Free - Athena Toolkit',
+                            text: 'Athena Toolkit',
                             link: '/tools/toolkit',
                         },
                     ],

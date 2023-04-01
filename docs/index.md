@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: 'alt'
       text: 'Install'
-      link: '/intro/install/installing-on-windows'
+      link: '/tutorials/free/setup/index'
     - theme: 'alt'
       text: 'Docs'
       link: '/api/index'
@@ -18,16 +18,17 @@ hero:
       text: 'Latest Posts'
       link: '/blog/index'
     - theme: 'alt'
-      text: 'Subscribers'
-      link: '/subscriber/tutorials/index'
+      text: 'Join Discord'
+      link: 'https://ares.stuyk.com/v1/get/discord'
 features:
   - title: '🧰 A Starting Kit'
-    details: 'Everything in the Athena Framework is built to let you code your roleplay game mode faster. Skip writing the hard stuff, and focus on the cool stuff.'
+    details: 'Everything in the Athena Framework is built to help you script a game mode faster. Using Athena requires some programming knowledge, and is not a plugin and play game mode.'
+
   - title: '🛠️ Powered by TypeScript'
-    details: 'Athena Framework uses modern development tools such as TypeScript, Vite, Vue 3, and MongoDB. This makes it so that familiar developers who have jobs in the industry are familiar with the tools that the Athena Framework uses.'
+    details: 'Using modern libraries like TypeScript, Vite, SWC, Vue 3, and MongoDB. A nearly seamless development environment for faster results.'
   
   - title: '👋 Come Join Us!'
-    details: 'We love teaching new people how to program, and how to get involved in the project. Come build alongside established developers and learn a new hobby.'
+    details: 'We are a teaching community, and we do answer questions. Additional assistance can be obtained if you are a subscriber.'
 ---
 
 <div class="video-container">
