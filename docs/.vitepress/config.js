@@ -34,7 +34,7 @@ export default async () => {
                     link: '/api/index'
                 },
                 {
-                    text: 'Tutorials',
+                    text: 'Guides',
                     link: '/tutorials/index'
                 },
                 {
