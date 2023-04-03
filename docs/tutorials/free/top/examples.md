@@ -628,6 +628,7 @@ async function closeStorage(uid: string, items: Array<StoredItem>, player: alt.P
 
 InventoryView.callbacks.add('close', closeStorage);
 ```
+:::
 
 ### Jobs
 
