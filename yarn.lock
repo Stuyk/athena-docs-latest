@@ -782,6 +782,11 @@
   "resolved" "https://registry.npmjs.org/vitepress-plugin-comment-with-giscus/-/vitepress-plugin-comment-with-giscus-1.1.1.tgz"
   "version" "1.1.1"
 
+"vitepress-plugin-google-analytics@^1.0.2":
+  "integrity" "sha512-ri8bFUAmt3c/DtPrALauGBIUr2gIJ11c1qNRhwd3/+aiuYZBfQpOosSxcO1AswgwRxP9FwBS6Z7jgdDVyXb2hA=="
+  "resolved" "https://registry.npmjs.org/vitepress-plugin-google-analytics/-/vitepress-plugin-google-analytics-1.0.2.tgz"
+  "version" "1.0.2"
+
 "vitepress-plugin-simple-search@^1.2.1":
   "integrity" "sha512-sPbgsIuAwhja22Q78srGiib8nmAI4A2jsC6jL5xF1Vcw8qCn/Tv8eI5Ww0AWisC7aFICJYECn8obJOqvR+dBYA=="
   "resolved" "https://registry.npmjs.org/vitepress-plugin-simple-search/-/vitepress-plugin-simple-search-1.2.1.tgz"

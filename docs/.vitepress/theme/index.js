@@ -7,6 +7,7 @@ import AuthComponent from '/components/Auth.vue';
 import ExclusivePage from '/components/ExclusivePage.vue';
 import { useData, useRoute } from 'vitepress';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import googleAnalytics from 'vitepress-plugin-google-analytics'
 import './athena.css'
 
 export default {
@@ -17,6 +18,10 @@ export default {
         app.component('Toolkit', ToolkitComponent);
         app.component('UserPlugin', UserPluginComponent);
         app.component('ExclusivePage', ExclusivePage);
+
+        googleAnalytics({
+            id: 'G-D2PZTWXMJ7'
+        })
     },
     setup() {
         const { frontmatter } = useData();
