@@ -22,9 +22,9 @@ Athena is **not a plug and play game mode**. If you cannot script, program, or c
 
 ### Install Guides
 
-* [Installing on Windows](../install/installing-on-windows.md)
+* [Installing on Windows](/tutorials/free/setup/installing-on-windows.md)
 
-* [Installing on Linux](../install/installing-on-linux.md)
+* [Installing on Linux](/tutorials/free/setup/installing-on-linux.md)
 
 ## Fast Installation
 
