@@ -50,14 +50,14 @@ export function getSidebar() {
         ],
         '/tutorials': [
             {
-                text: 'Features',
-                collapsed: false,
-                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/top')
-            },
-            {
                 text: 'Setup',
                 collapsed: false,
                 items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/setup')
+            },
+            {
+                text: 'Examples',
+                collapsed: false,
+                items: SidebarBuilder.get.filesAndOrder('./docs/tutorials/free/top')
             },
             {
                 text: 'Making Plugins',
