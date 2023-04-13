@@ -45,10 +45,15 @@ Inside of the `registerPlugin` intitializer function let's build a few things we
 1. Interaction Point
    1. Enables `Shift + E` based interaction with a point.
    2. When a callback is specified it will invoke the function on server-side when pressed.
+
 2. Marker
    1. A visible usually transparent marker to show a place in the world.
+
 3. Text Label
    1. A visible text entry that can be displayed alongside the marker.
+   
+4. Blip
+   1. A visible radar marker that informs the player something is on the map.
 
 ![](https://i.imgur.com/sa35UKB.png)
 
@@ -58,6 +63,15 @@ Here's some code to go with it.
 const jobStart = new alt.Vector3({ x: 132.4439239501953, y: -1462.4208984375, z: 29.357059478759766 }).sub(0, 0, 1);
 
 Athena.systems.plugins.registerPlugin(PLUGIN_NAME, () => {
+    Athena.controllers.blip.append({
+        pos: jobStart,
+        scale: 1,
+        sprite: 58,
+        shortRange: true,
+        text: 'Food Delivery',
+        color: 5,
+    });
+
     Athena.controllers.marker.append({ type: 1, pos: jobStart, color: new alt.RGBA(0, 255, 0, 100) });
     Athena.controllers.textLabel.append({ text: 'Food Delivery', pos: jobStart.add(0, 0, 2) });
     Athena.controllers.interaction.append({ position: jobStart, range: 3, height: 2 });
@@ -544,6 +558,15 @@ function startJob(player: alt.Player) {
 }
 
 Athena.systems.plugins.registerPlugin(PLUGIN_NAME, () => {
+    Athena.controllers.blip.append({
+        pos: jobStart,
+        scale: 1,
+        sprite: 58,
+        shortRange: true,
+        text: 'Food Delivery',
+        color: 5,
+    });
+
     Athena.controllers.marker.append({ type: 1, pos: jobStart, color: new alt.RGBA(0, 255, 0, 100) });
     Athena.controllers.textLabel.append({ text: 'Food Delivery', pos: jobStart.add(0, 0, 2) });
     Athena.controllers.interaction.append({
