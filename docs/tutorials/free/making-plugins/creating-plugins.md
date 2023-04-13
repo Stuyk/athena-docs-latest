@@ -57,6 +57,12 @@ Run the server, and you will see each corresponding message in server, and clien
 
 That's all that is needed to start building plugins.
 
+## Integrating an API
+
+If you want to know how to integrate your own API to distribute it to users of Athena with auto-completion, there is a guide for that.
+
+[Check the Guide Out](/tutorials/free/top/plugin-api.md)
+
 ## Special Files
 
 These are files that can be created in a plugin folder to do different things.
