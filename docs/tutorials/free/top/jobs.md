@@ -90,6 +90,15 @@ function startJob(player: alt.Player) {
 }
 
 Athena.systems.plugins.registerPlugin(PLUGIN_NAME, () => {
+        Athena.controllers.blip.append({
+        pos: jobStart,
+        scale: 1,
+        sprite: 58,
+        shortRange: true,
+        text: 'Food Delivery',
+        color: 5,
+    });
+    
     Athena.controllers.marker.append({ type: 1, pos: jobStart, color: new alt.RGBA(0, 255, 0, 100) });
     Athena.controllers.textLabel.append({ text: 'Food Delivery', pos: jobStart.add(0, 0, 2) });
     Athena.controllers.interaction.append({
