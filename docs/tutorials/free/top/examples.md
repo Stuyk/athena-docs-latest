@@ -4,7 +4,7 @@ outline: [1,3]
 order: -99
 ---
 
-# {{ $frontmatter.title }}
+# Code Examples
 
 > Written for Athena V5+
 

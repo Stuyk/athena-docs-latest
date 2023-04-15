@@ -1,10 +1,10 @@
 ---
 title: 'Jobs'
 outline: [1,3]
-order: -99
+order: -98
 ---
 
-# {{ $frontmatter.title }}
+# Jobs
 
 Let me preface by saying that a job is a task that a player must complete. These are usually meant to be 'money makers' and are your typical grinding jobs that require point-to-point systems, or something of the sort.
 
@@ -98,7 +98,7 @@ Athena.systems.plugins.registerPlugin(PLUGIN_NAME, () => {
         text: 'Food Delivery',
         color: 5,
     });
-    
+
     Athena.controllers.marker.append({ type: 1, pos: jobStart, color: new alt.RGBA(0, 255, 0, 100) });
     Athena.controllers.textLabel.append({ text: 'Food Delivery', pos: jobStart.add(0, 0, 2) });
     Athena.controllers.interaction.append({

@@ -3,7 +3,7 @@ title: 'Adding Mods'
 order: -98
 ---
 
-# {{ $frontmatter.title }}
+# Adding Mods
 
 ### Using Mods with alt:V
 

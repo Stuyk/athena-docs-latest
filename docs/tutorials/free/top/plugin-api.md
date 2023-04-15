@@ -4,7 +4,7 @@ outline: [1,3]
 order: -90
 ---
 
-# {{ $frontmatter.title }}
+# Plugin API
 
 In Athena `5.1.0` there is a new way to write APIs through plugins.
 

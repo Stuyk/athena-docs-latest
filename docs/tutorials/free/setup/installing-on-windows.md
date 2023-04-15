@@ -3,7 +3,7 @@ title: 'Installing on Windows'
 order: -97
 ---
 
-# {{ $frontmatter.title }}
+# Installing on Windows
 
 ## Install on Windows 10+
 

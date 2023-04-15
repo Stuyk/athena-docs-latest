@@ -4,7 +4,7 @@ order: -99999
 comment: false
 ---
 
-# {{ $frontmatter.title }}
+# About Blog Posts
 
 These posts are meant to highlight some changes and decision making during the creation of the Athena Framework.
 

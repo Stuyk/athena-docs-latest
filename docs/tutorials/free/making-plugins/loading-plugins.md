@@ -4,7 +4,7 @@ order: -97
 comment: false
 ---
 
-# {{ $frontmatter.title }}
+# Loading Plugins
 
 ### Learn to Load Plugins
 

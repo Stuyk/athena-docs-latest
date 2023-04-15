@@ -3,7 +3,7 @@ title: 'Adding Modded Vehicles'
 order: -96
 ---
 
-# {{ $frontmatter.title }}
+# Adding Modded Vehicles
 
 ### How to Add Vehicles?
 

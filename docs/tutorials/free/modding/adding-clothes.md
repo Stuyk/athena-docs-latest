@@ -3,7 +3,7 @@ title: 'Adding Modded Clothes'
 order: -97
 ---
 
-# {{ $frontmatter.title }}
+# Adding Modded Clothes
 
 Clothing mods are probably the most annoying modding resouce to add to a server purely because of the complexity.
 

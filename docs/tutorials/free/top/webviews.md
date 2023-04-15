@@ -1,10 +1,10 @@
 ---
 title: 'WebViews & Pages'
 outline: [1,3]
-order: -99
+order: -98
 ---
 
-# {{ $frontmatter.title }}
+# WebViews & Pages
 
 In the Athena Framework we call our HTML interfaces `pages`. A page is automatically loaded into our `Vue 3` system when you create a plugin.
 

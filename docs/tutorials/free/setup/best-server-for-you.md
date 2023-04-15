@@ -3,7 +3,7 @@ title: 'Best Server for You'
 order: -95
 ---
 
-# {{ $frontmatter.title }}
+# Best Server for You
 
 There is **no best server option** if you cannot do basic system administration. You also do not need a server host for development.
 

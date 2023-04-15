@@ -3,7 +3,7 @@ title: 'Keeping Athena Updated'
 order: -94
 ---
 
-# {{ $frontmatter.title }}
+# Keeping Athena Updated
 
 ## Quick Update Instructions
 

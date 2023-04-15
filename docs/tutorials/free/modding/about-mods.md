@@ -3,7 +3,7 @@ title: 'About Mods'
 order: -99
 ---
 
-# {{ $frontmatter.title }}
+# About Mods
 
 ### What is NOT a Mod
 

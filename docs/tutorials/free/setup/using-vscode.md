@@ -3,7 +3,7 @@ title: 'Using VSCode'
 order: 0
 ---
 
-# {{ $frontmatter.title }}
+# Using VSCode
 
 ## Opening a Folder
 

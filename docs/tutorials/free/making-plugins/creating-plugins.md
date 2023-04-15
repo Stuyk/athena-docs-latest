@@ -5,7 +5,7 @@ outline: [1,6]
 comment: false
 ---
 
-# {{ $frontmatter.title }}
+# Creating Plugins
 
 Plugins in the Athena Framework are made in a specific way. Meaning, that following this general structure will help you create robust plugins without touching the core of the framework.
 

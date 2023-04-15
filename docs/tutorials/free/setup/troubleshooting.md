@@ -3,7 +3,7 @@ title: 'Troubleshooting'
 order: 9999
 ---
 
-# {{ $frontmatter.title }}
+# Troubleshooting
 
 While not everything can be magically fixed when working with Athena, there are some steps you can take to help identify your problem.
 

@@ -3,7 +3,7 @@ title: 'Running Athena'
 order: -92
 ---
 
-# {{ $frontmatter.title }}
+# Running Athena
 
 When you are running the framework you should always ensure you are in the `altv-athena-private` or the directory which has the Athena Framework source files.
 

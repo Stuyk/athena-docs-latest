@@ -4,7 +4,7 @@ order: -99
 comment: false
 ---
 
-# {{ $frontmatter.title }}
+# Introduction
 
 See the left-hand menu for additional information about available tutorials.
 

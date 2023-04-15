@@ -4,7 +4,7 @@ order: -99999
 comment: false
 ---
 
-# {{ $frontmatter.title }}
+# About API
 
 The API has many different options but pay attention to the context at the top to see where the API pathways are available.
 

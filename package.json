@@ -7,14 +7,14 @@
     "dotenv": "^16.0.2",
     "glob": "^8.0.3",
     "gray-matter": "^4.0.3",
-    "vitepress": "^1.0.0-alpha.60",
+    "vitepress": "^1.0.0-alpha.68",
     "vitepress-plugin-google-analytics": "^1.0.2",
     "vue": "^3.2.38"
   },
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "node ./scripts/titles/index.js & vitepress dev docs",
     "host": "vitepress --host dev docs",
-    "build": "vitepress build docs",
+    "build": "node ./scripts/titles/index.js & vitepress build docs",
     "serve": "vitepress serve docs"
   },
   "prettier": {
@@ -28,7 +28,7 @@
     "@stuyk/vitepress-sidebar-builder": "^1.0.2",
     "markdown-it": "^13.0.1",
     "shiki": "^0.14.0",
-    "vitepress-plugin-comment-with-giscus": "^1.1.1",
-    "vitepress-plugin-simple-search": "^1.2.1"
+    "vite": "^4.2.1",
+    "vitepress-plugin-comment-with-giscus": "^1.1.1"
   }
 }

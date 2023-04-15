@@ -4,7 +4,7 @@ order: -99
 comment: false
 ---
 
-# {{ $frontmatter.title }}
+# About Plugins
 
 ### What is NOT a Plugin
 

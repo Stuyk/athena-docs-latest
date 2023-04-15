@@ -3,7 +3,7 @@ title: 'Installing on Linux'
 order: -96
 ---
 
-# {{ $frontmatter.title }}
+# Installing on Linux
 
 ## Linux
 

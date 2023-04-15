@@ -5,7 +5,7 @@ order: -99999
 comment: false
 ---
 
-# {{ $frontmatter.title }}
+# How to Read the API
 
 Reading API pages can be a bit overwhelming but I promise there is a method to the madness.
 
