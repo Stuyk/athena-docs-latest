@@ -19,7 +19,7 @@ hero:
       link: '/blog/index'
     - theme: 'alt'
       text: 'Join Discord'
-      link: 'https://ares.stuyk.com/v1/get/discord'
+      link: 'https://discord.com/servers/athena-framework-790039623648542760'
 features:
   - title: '🧰 A Starting Kit'
     details: 'Everything in the Athena Framework is built to help you script a game mode faster. Using Athena requires some programming knowledge, and is not a plugin and play game mode.'
