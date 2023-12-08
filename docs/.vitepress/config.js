@@ -19,7 +19,7 @@ export default defineConfig({
         logo: '/logo.png',
         socialLinks: [
             { icon: 'github', link: 'https://github.com/stuyk/altv-athena' },
-            { icon: 'discord', link: 'https://ares.stuyk.com/v1/get/discord' },
+            { icon: 'discord', link: 'https://discord.com/servers/athena-framework-790039623648542760' },
         ],
         // Search
         search: {
